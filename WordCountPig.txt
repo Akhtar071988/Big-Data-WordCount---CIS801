@@ -1,0 +1,967 @@
+
+Big data
+From Wikipedia, the free encyclopedia
+This article is about large collections of data. For the band, see Big Data (band).
+Big data[1][2] is the term for a collection of data sets so large and complex that it becomes difficult to process using on-hand database management tools or traditional data processing applications. The challenges include capture, curation, storage,[3] search, sharing, transfer, analysis[4] and visualization. The trend to larger data sets is due to the additional information derivable from analysis of a single large set of related data, as compared to separate smaller sets with the same total amount of data, allowing correlations to be found to "spot business trends, determine quality of research, prevent diseases, link legal citations, combat crime, and determine real-time roadway traffic conditions."[5][6][7]
+
+
+A visualization created by IBM of Wikipedia edits. At multiple terabytes in size, the text and images of Wikipedia are a classic example of big data.
+
+
+Growth of and Digitization of Global Information Storage Capacity; source:http://www.martinhilbert.net/WorldInfoCapacity.html
+As of 2012, limits on the size of data sets that are feasible to process in a reasonable amount of time were on the order of exabytes of data, that is, millions of terabytes.[8] Scientists regularly encounter limitations due to large data sets in many areas, including meteorology,genomics,[9] connectomics, complex physics simulations,[10] and biological and environmental research.[11] The limitations also affectInternet search, finance and business informatics. Data sets grow in size in part because they are increasingly being gathered by ubiquitous information-sensing mobile devices, aerial sensory technologies (remote sensing), software logs, cameras, microphones, radio-frequency identification readers, and wireless sensor networks.[12][13][14] The world's technological per-capita capacity to store information has roughly doubled every 40 months since the 1980s;[15] as of 2012, every day 2.5 exabytes (2.5×1018) of data were created.[16] The challenge for large enterprises is determining who should own big data initiatives that straddle the entire organization.[17]
+Big data is difficult to work with using most relational database management systems and desktop statistics and visualization packages, requiring instead "massively parallel software running on tens, hundreds, or even thousands of servers".[18] What is considered "big data" varies depending on the capabilities of the organization managing the set, and on the capabilities of the applications that are traditionally used to process and analyze the data set in its domain. "For some organizations, facing hundreds of gigabytes of data for the first time may trigger a need to reconsider data management options. For others, it may take tens or hundreds of terabytes before data size becomes a significant consideration."[19]
+Contents
+* 1 Definition
+o 1.1 Big science
+o 1.2 Science and research
+o 1.3 Government
+o 1.4 Private sector
+o 1.5 International development
+* 2 Market
+* 3 Architecture
+* 4 Technologies
+* 5 Research activities
+* 6 Applications
+o 6.1 Manufacturing
+* 7 Critique
+o 7.1 Critiques of the big data paradigm
+o 7.2 Critiques of big data execution
+* 8 Benefits
+o 8.1 Individual[107]
+o 8.2 Community[110]
+o 8.3 Organizations[111]
+o 8.4 Society[116]
+* 9 See also
+* 10 References
+* 11 External links
+* 12 Further reading
+Definition[edit]
+Big Data usually includes data sets with sizes beyond the ability of commonly used software tools to capture, curate, manage, and process the data within a tolerable elapsed time.[20] Big data sizes are a constantly moving target, as of 2012 ranging from a few dozen terabytes to many petabytes of data in a single data set.
+In a 2001 research report[21] and related lectures, META Group (now Gartner) analyst Doug Laney defined data growth challenges and opportunities as being three-dimensional, i.e. increasing volume (amount of data), velocity (speed of data in and out), and variety (range of data types and sources). Gartner, and now much of the industry, continue to use this "3Vs" model for describing big data.[22] In 2012, Gartner updated its definition as follows: "Big data is high volume, high velocity, and/or high variety information assets that require new forms of processing to enable enhanced decision making, insight discovery and process optimization."[23] Additionally, a new V "Veracity" is added by some organizations to describe it.[24]
+If Gartner’s definition (the 3Vs) is still widely used, the growing maturity of the concept fosters a more sound difference between big data and Business Intelligence, regarding data and their use:
+* Business Intelligence uses descriptive statistics with data with high information density to measure things, detect trends etc.;
+* Big data uses inductive statistics and concepts from nonlinear system identification [25] to infer laws (regressions, nonlinear relationships, and causal effects) from large data sets [26] to reveal relationships, dependencies and perform predictions of outcomes and behaviors.[25][27]
+Big science[edit]
+The Large Hadron Collider experiments represent about 150 million sensors delivering data 40 million times per second. There are nearly 600 million collisions per second. After filtering and refraining from recording more than 99.999% of these streams, there are 100 collisions of interest per second.[28][29][30]
+* As a result, only working with less than 0.001% of the sensor stream data, the data flow from all four LHC experiments represents 25 petabytes annual rate before replication (as of 2012). This becomes nearly 200 petabytes after replication.
+* If all sensor data were to be recorded in LHC, the data flow would be extremely hard to work with. The data flow would exceed 150 million petabytes annual rate, or nearly 500exabytes per day, before replication. To put the number in perspective, this is equivalent to 500 quintillion (5×1020) bytes per day, almost 200 times higher than all the other sources combined in the world.
+Science and research[edit]
+* When the Sloan Digital Sky Survey (SDSS) began collecting astronomical data in 2000, it amassed more in its first few weeks than all data collected in the history of astronomy. Continuing at a rate of about 200 GB per night, SDSS has amassed more than 140 terabytes of information. When the Large Synoptic Survey Telescope, successor to SDSS, comes online in 2016 it is anticipated to acquire that amount of data every five days.[5]
+* Decoding the human genome originally took 10 years to process, now it can be achieved in less than a week : the DNA sequencers have divided the sequencing cost by 10,000 in the last ten years, which is 100 times faster than the reduction in cost predicted by Moore's Law.[31]
+* The NASA Center for Climate Simulation (NCCS) stores 32 petabytes of climate observations and simulations on the Discover supercomputing cluster.[32]
+Government[edit]
+* In 2012, the Obama administration announced the Big Data Research and Development Initiative, which explored how big data could be used to address important problems faced by the government.[33] The initiative was composed of 84 different big data programs spread across six departments.[34]
+* Big data analysis played a large role in Barack Obama's successful 2012 re-election campaign.[35]
+* The United States Federal Government owns six of the ten most powerful supercomputers in the world.[36]
+* The Utah Data Center is a data center currently being constructed by the United States National Security Agency. When finished, the facility will be able to handle a large amount of information collected by the NSA over the Internet. The exact amount of storage space is unknown, but more recent sources claim it will be on the order of a fewExabytes.[37][38][39]
+Private sector[edit]
+
+
+Bus wrapped with SAP Big data parked outside IDF13.
+* eBay.com uses two data warehouses at 7.5 petabytes and 40PB as well as a 40PB Hadoop cluster for search, consumer recommendations, and merchandising. Inside eBay’s 90PB data warehouse
+* Amazon.com handles millions of back-end operations every day, as well as queries from more than half a million third-party sellers. The core technology that keeps Amazon running is Linux-based and as of 2005 they had the world’s three largest Linux databases, with capacities of 7.8 TB, 18.5 TB, and 24.7 TB.[40]
+* Walmart handles more than 1 million customer transactions every hour, which are imported into databases estimated to contain more than 2.5 petabytes (2560 terabytes) of data – the equivalent of 167 times the information contained in all the books in the US Library of Congress.[5]
+* Facebook handles 50 billion photos from its user base.[41]
+* FICO Falcon Credit Card Fraud Detection System protects 2.1 billion active accounts world-wide.[42]
+* The volume of business data worldwide, across all companies, doubles every 1.2 years, according to estimates.[43][44]
+* Windermere Real Estate uses anonymous GPS signals from nearly 100 million drivers to help new home buyers determine their typical drive times to and from work throughout various times of the day.[45]
+International development[edit]
+Research on the effective usage of information and communication technologies for development (also known as ICT4D) suggests that big data technology can make important contributions but also present unique challenges to International development.[46][47] Advancements in big data analysis offer cost-effective opportunities to improve decision-making in critical development areas such as health care, employment, economic productivity, crime, security, and natural disaster and resource management.[48][49] However, longstanding challenges for developing regions such as inadequate technological infrastructure and economic and human resource scarcity exacerbate existing concerns with big data such as privacy, imperfect methodology, and interoperability issues.[48]
+Market[edit]
+"Big Data" has increased the demand of information management specialists in that Software AG, Oracle Corporation, IBM, Microsoft, SAP, EMC, HP and Dell have spent more than $15 billion on software firms only specializing in data management and analytics. In 2010, this industry on its own was worth more than $100 billion and was growing at almost 10 percent a year: about twice as fast as the software business as a whole.[5]
+Developed economies make increasing use of data-intensive technologies. There are 4.6 billion mobile-phone subscriptions worldwide and there are between 1 billion and 2 billion people accessing the internet.[5] Between 1990 and 2005, more than 1 billion people worldwide entered the middle class which means more and more people who gain money will become more literate which in turn leads to information growth. The world's effective capacity to exchange information through telecommunication networks was 281 petabytes in 1986, 471 petabytes in 1993, 2.2 exabytes in 2000, 65 exabytes in 2007[15] and it is predicted that the amount of traffic flowing over the internet will reach 667 exabytes annually by 2014.[5] It is estimated that one third of the globally stored information is in the form of alphanumeric text and still image data,[50] which is the format most useful for most big data applications. This also shows the potential of yet unused data (i.e. in the form of video and audio content).
+Big Data Software:
+* Hadoop - Apache Foundation
+* MongoDB - MongoDB, Inc
+* Splunk - Splunk Inc
+Architecture[edit]
+In 2004, Google published a paper on a process called MapReduce that used such an architecture. The MapReduce framework provides a parallel processing model and associated implementation to process huge amount of data. With MapReduce, queries are split and distributed across parallel nodes and processed in parallel (the Map step). The results are then gathered and delivered (the Reduce step). The framework was very successful,[51] so others wanted to replicate the algorithm. Therefore, an implementation of the MapReduce framework was adopted by an Apache open source project named Hadoop.[52]
+MIKE2.0 is an open approach to information management that acknowledges the need for revisions due to big data implications in an article titled "Big Data Solution Offering".[53]The methodology addresses handling big data in terms of useful permutations of data sources, complexity in interrelationships, and difficulty in deleting (or modifying) individual records.[54]
+Recent studies show that the use of a multiple layer architecture is an option for dealing with Big Data. The Distributed Parallel architecture distributes data across multiple processing units and parallel processing units provide data much faster, by improving processing speeds. This type of architecture inserts data into a parallel DBMS, which implements the use of MapReduce and Hadoop frameworks. This type of framework looks to make the processing power transparent to the end user by using a front end application server.[55]
+Technologies[edit]
+Big data requires exceptional technologies to efficiently process large quantities of data within tolerable elapsed times. A 2011 McKinsey report[56] suggests suitable technologies include A/B testing, crowdsourcing, data fusion and integration, genetic algorithms, machine learning, natural language processing, signal processing, simulation, time series analysis and visualisation. Multidimensional big data can also be represented as tensors, which can be more efficiently handled by tensor-based computation,[57] such asmultilinear subspace learning.[58] Additional technologies being applied to big data include massively parallel-processing (MPP) databases, search-based applications, data-mining grids, distributed file systems, distributed databases, cloud based infrastructure (applications, storage and computing resources) and the Internet.[citation needed]
+Some but not all MPP relational databases have the ability to store and manage petabytes of data. Implicit is the ability to load, monitor, back up, and optimize the use of the large data tables in the RDBMS.[59]
+DARPA’s Topological Data Analysis program seeks the fundamental structure of massive data sets and in 2008 the technology went public with the launch of a company calledAyasdi.[60]
+The practitioners of big data analytics processes are generally hostile to slower shared storage,[61] preferring direct-attached storage (DAS) in its various forms from solid state drive (SSD) to high capacity SATA disk buried inside parallel processing nodes. The perception of shared storage architectures—Storage area network (SAN) and Network-attached storage (NAS) —is that they are relatively slow, complex, and expensive. These qualities are not consistent with big data analytics systems that thrive on system performance, commodity infrastructure, and low cost.
+Real or near-real time information delivery is one of the defining characteristics of big data analytics. Latency is therefore avoided whenever and wherever possible. Data in memory is good—data on spinning disk at the other end of a FC SAN connection is not. The cost of a SAN at the scale needed for analytics applications is very much higher than other storage techniques.
+There are advantages as well as disadvantages to shared storage in big data analytics, but big data analytics practitioners as of 2011 did not favour it.[62]
+Research activities[edit]
+Encrypted search & cluster formation in Big Data is set for the demonstration in March 2014 at American Society of Engineering Education. Gautam Siwach engaged at Tackling the challenges of Big Data by MIT Computer Science and Artificial Intelligence Laboratory and Dr. Amir Esmailpour at UNH Research Group investigated the key features of big data as formation of clusters and their interconnections. They focused on the security of big data and the actual orientation of the term towards the presence of different type of data in an encrypted form at cloud interface by providing the raw definitions and real time examples within the technology. Moreover, they proposed an approach for identifying the encoding technique to advance towards an expedited search over encrypted text leading to the security enhancements in big data.[63]
+In March 2012, The White House announced a national "Big Data Initiative" that consisted of six Federal departments and agencies committing more than $200 million to big data research projects.[64]
+The initiative included a National Science Foundation "Expeditions in Computing" grant of $10 million over 5 years to the AMPLab[65] at the University of California, Berkeley.[66]The AMPLab also received funds from DARPA, and over a dozen industrial sponsors and uses big data to attack a wide range of problems from predicting traffic congestion[67] to fighting cancer.[68]
+The White House Big Data Initiative also included a commitment by the Department of Energy to provide $25 million in funding over 5 years to establish the Scalable Data Management, Analysis and Visualization (SDAV) Institute,[69] led by the Energy Department’s Lawrence Berkeley National Laboratory. The SDAV Institute aims to bring together the expertise of six national laboratories and seven universities to develop new tools to help scientists manage and visualize data on the Department’s supercomputers.
+The U.S. state of Massachusetts announced the Massachusetts Big Data Initiative in May 2012, which provides funding from the state government and private companies to a variety of research institutions.[70] The Massachusetts Institute of Technology hosts the Intel Science and Technology Center for Big Data in the MIT Computer Science and Artificial Intelligence Laboratory, combining government, corporate, and institutional funding and research efforts.[71]
+The European Commission is funding a 2-year-long Big Data Public Private Forum through their Seventh Framework Program to engage companies, academics and other stakeholders in discussing big data issues. The project aims to define a strategy in terms of research and innovation to guide supporting actions from the European Commission in the successful implementation of the Big Data economy. Outcomes of this project will be used as input for Horizon 2020, their next framework program.[72]
+The British government announced in March 2014 the founding of the Alan Turing Institute, named after the computer pioneer and code-breaker, which will focus on new ways of collecting and analysing large sets of data.[73]
+At the University of Waterloo Stratford Campus Canadian Open Data Experience (CODE) Inspiration Day, it was demonstrated how using Data Visualization techniques can increase the understanding and appeal of Big Data sets in order to communicate a story to the world.[74]
+In order to make manufacturing more competitive in the United States (and globe), there is a need to integrate more American ingenuity and innovation into manufacturing ; Therefore, National Science Foundation has granted the Industry University cooperative research center for Intelligent Maintenance Systems (IMS) at university of Cincinnati to focus on developing advanced predictive tools and techniques to be applicable in Big Data environment.[75][76] In May 2013, IMS Center held an industry advisory board meeting focusing on Big Data where presenters from various industrial companies discussed their concerns, issues and future goals in Big Data environment.
+Computational social science — Tobias Preis et al. used Google Trends data to demonstrate that Internet users from countries with a higher per capita gross domestic product (GDP) are more likely to search for information about the future than information about the past. The findings suggest there may be a link between online behaviour and real-world economic indicators.[77][78][79] The authors of the study examined Google queries logs made by ratio of the volume of searches for the coming year (‘2011’) to the volume of searches for the previous year (‘2009’), which they call the ‘future orientation index’.[80] They compared the future orientation index to the per capita GDP of each country and found a strong tendency for countries in which Google users enquire more about the future to exhibit a higher GDP. The results hint that there may potentially be a relationship between the economic success of a country and the information-seeking behavior of its citizens captured in big data.
+Tobias Preis and his colleagues Helen Susannah Moat and H. Eugene Stanley introduced a method to identify online precursors for stock market moves, using trading strategies based on search volume data provided by Google Trends.[81] Their analysis of Google search volume for 98 terms of varying financial relevance, published in Scientific Reports,[82] suggests that increases in search volume for financially relevant search terms tend to precede large losses in financial markets.[83][84][85][86][87][88][89][90]
+
+Applications[edit]
+Manufacturing[edit]
+Based on TCS 2013 Global Trend Study, huge improvements in supply planning and boost product quality is the greatest benefit of Big Data for manufacturing.[91] Big Data provides an infrastructure for transparency in manufacturing industry, which is the ability to unravel uncertainties such as inconsistent component performance and availability. Predictive manufacturing as an applicable approach toward near-zero downtime and transparency requires vast amount of data and advanced prediction tools for a systematic process of data into useful information.[92] A conceptual framework of predictive manufacturing begins with data acquisition where different type of sensory data is available to acquire such as acoustics, vibration, pressure, current, voltage and controller data. Vast amount of sensory data in addition to historical data construct the “Big Data” in manufacturing. The generated Big Data acts as the input into predictive tools and preventive strategies such as Prognostics and Health Management (PHM).[75]
+Critique[edit]
+Critiques of the big data paradigm come in two flavors, those that question the implications of the approach itself, and those that question the way it is currently done.
+
+
+Cartoon critical of big data application
+Critiques of the big data paradigm[edit]
+"A crucial problem is that we do not know much about the underlying empirical micro-processes that lead to the emergence of the[se] typical network characteristics of Big Data".[20] In their critique, Snijders, Matzat, and Reips point out that often very strong assumptions are made about mathematical properties that may not at all reflect what is really going on at the level of micro-processes. Mark Graham has leveled broad critiques at Chris Anderson's assertion that big data will spell the end of theory: focusing in particular on the notion that big data will always need to be contextualized in their social, economic and political contexts.[93] Even as companies invest eight- and nine-figure sums to derive insight from information streaming in from suppliers and customers, less than 40% of employees have sufficiently mature processes and skills to do so. To overcome this insight deficit, "big data", no matter how comprehensive or well analyzed, needs to be complemented by "big judgment", according to an article in the Harvard Business Review.[94]
+Much in the same line, it has been pointed out that the decisions based on the analysis of big data are inevitably "informed by the world as it was in the past, or, at best, as it currently is".[48] Fed by a large number of data on past experiences, algorithms can predict future development if the future is similar to the past. If the systems dynamics of the future change, the past can say little about the future. For this, it would be necessary to have a thorough understanding of the systems dynamic, which implies theory.[95] As a response to this critique it has been suggested to combine big data approaches with computer simulations, such as agent-based models, for example.[48]Agent-based models are increasingly getting better in predicting the outcome of social complexities of even unknown future scenarios through computer simulations that are based on a collection of mutually interdependent algorithms.[96][97] In addition, use of multivariate methods that probe for the latent structure of the data, such as factor analysis andcluster analysis, have proven useful as analytic approaches that go well beyond the bi-variate approaches (cross-tabs) typically employed with smaller data sets.
+In health and biology, conventional scientific approaches are based on experimentation. For these approaches, the limiting factor are the relevant data that can confirm or refute the initial hypothesis.[98] A new postulate is accepted now in biosciences: the information provided by the data in huge volumes (omics) without prior hypothesis is complementary and sometimes necessary to conventional approaches based on experimentation. In the massive approaches it is the formulation of a relevant hypothesis to explain the data that is the limiting factor. The search logic is reversed and the limits of induction ("Glory of Science and Philosophy scandal", C. D. Broad, 1926) to be considered.
+Privacy advocates are concerned about the threat to privacy represented by increasing storage and integration of personally identifiable information; expert panels have released various policy recommendations to conform practice to expectations of privacy.[99][100][101]
+Critiques of big data execution[edit]
+Researcher Danah Boyd has raised concerns about the use of big data in science neglecting principles such as choosing a representative sample by being too concerned about actually handling the huge amounts of data.[102] This approach may lead to results bias in one way or another. Integration across heterogeneous data resources — some that might be considered "big data" and others not — presents formidable logistical as well as analytical challenges, but many researchers argue that such integrations are likely to represent the most promising new frontiers in science.[103] In the provocative article "Critical Questions for Big Data",[104] the authors title Big Data a part of Mythology: "large data sets offer a higher form of intelligence and knowledge [...], with the aura of truth, objectivity, and accuracy". Users of Big Data are often "lost in the sheer volume of numbers", and "working with Big Data is still subjective, and what it quantifies does not necessarily have a closer claim on objective truth".[104]
+Big data is a buzzword and a "vague term",[105] but at the same time an "obsession"[105] with entrepreneurs, consultants, scientists and the media. Big data showcases such asGoogle Flu Trends failed to deliver good predictions in recent years, overstating the flu outbreaks by a factor of two. Similarly, Academy awards and election predictions solely based on Twitter were more often off than on target. Big data often poses the same challenges as small data; and adding more data does not solve problems of bias, but may emphasize other problems. In particular data sources such as Twitter are not representative of the overall population, and results drawn from such sources may then lead to wrong conclusions. Google Translate - which is based on big data statistical analysis of text - does a remarkably good job at translating web pages, but for specialized domains the results may be badly off. On the other hand, big data may also introduce new problems, such as the multiple comparisons problem: simultaneously testing a large set of hypotheses is likely to produce many false results that mistakenly appear to be significant. Ioannidis argued that "most published research findings are false" [106] due to essentially the same effect: when many scientific teams and researchers each perform many experiments (i.e. process a big amount of scientific data; although not with big data technology), the likelihood of a "singificant" result being actually false grows fast - even more so, when only positive results are published.
+Benefits[edit]
+Individual[107][edit]
+Big data analysis provides a direct benefit to those individuals whose information is being used. For example, the high degree of customization pursued by Netflix and Amazon, which recommend films and products to consumers based on analysis of their previous interactions. Data analysis benefits consumers and has been justified without solicitation of explicit agreement. Similarly, Comcast’s decision in 2010 to proactively monitor its customers’ computers to detect malware, [108]and more recent decisions by Internet service providers including Comcast, AT&T, and Verizon to reach out to consumers to report potential malware infections, were intended to directly benefit consumers. [109] Also Google’s autocomplete and translate are based on comprehensive data collection and real time analysis.
+Community[110][edit]
+The collection and use of an individual’s data benefits not only individual, but also community, such as users of a similar product of residents of a geographical area. Think about Internet browser crash reports, which few users opt into not so much because of real privacy concerns but rater due to a belief that others will do the job for them. Those users who do agree to send crash reports benefit not only themselves, but also other users of the same product. Similarly, individuals who report drug side effects confer a benefit to other existing and prospective users.
+Organizations[111][edit]
+Big data analysis often benefits those organizations that collect and harness the data. Data-driven profits may be viewed as enhancing allocative efficiency by facilitating the ‘free’ economy. [112] The emergence, expansion, and widespread use of innovative products and services at decreasing marginal costs have revolutionized global economies and societal structures, facilitating access to technology and knowledge [113] and fomenting social change. [114] With more data, businesses can optimize distribution methods, efficiently allocate credit, and robustly combat fraud, benefitting consumers as a whole. [115] But in the absence of individual value or broader societal gain, others may consider enhanced business profits to be a mere value transfer from individuals whose data is being exploited. In economic terms, such profits create distributional gains to some actors as opposed to driving allocative efficiency.
+Society[116][edit]
+Some data uses benefit society at large, for example, data mining for purposes of national security. When weighting the benefits of national security driven policies, the effects should be assessed at a broad societal level. Similarly, data usage for fraud detection in the payment card industry helps facilitate safe, secure, and frictionless transactions, benefiting society as a whole. And large-scale analysis of geo-location data has been used for urban planning, disaster recovery, and optimization of energy consumption.
+See also[edit]
+Information technology portal* Data Defined Storage
+* Nonlinear system identification
+* Operations research
+* Supercomputer
+* Tuple space
+* Unstructured data
+* MapReduce
+* Apache Hadoop
+* Apache Accumulo
+* Sqrrl
+* Programming with Big Data in R
+* Big Media
+* Big Oil
+* Big Pharma
+* Big Tobacco
+References[edit]
+1. Jump up^ White, Tom (10 May 2012). Hadoop: The Definitive Guide. O'Reilly Media. p. 3.ISBN 978-1-4493-3877-0.
+2. Jump up^ "MIKE2.0, Big Data Definition".
+3. Jump up^ Kusnetzky, Dan. "What is "Big Data?"". ZDNet.
+4. Jump up^ Vance, Ashley (22 April 2010). "Start-Up Goes After Big Data With Hadoop Helper".New York Times Blog.
+5. ^ Jump up to:a b c d e f "Data, data everywhere". The Economist. 25 February 2010. Retrieved 9 December 2012.
+6. Jump up^ "E-Discovery Special Report: The Rising Tide of Nonlinear Review". Hudson Global. Retrieved 1 July 2012. by Cat Casey and Alejandra Perez
+7. Jump up^ Kerschberg, Ben (9 January 2012). "What Technology-Assisted Electronic Discovery Teaches Us About The Role Of Humans In Technology — Re-Humanizing Technology-Assisted Review". Forbes. Retrieved 1 July 2012.
+8. Jump up^ Francis, Matthew (2012-04-02). "Future telescope array drives development of exabyte processing". Retrieved 2012-10-24.
+9. Jump up^ "Community cleverness required". Nature 455 (7209): 1. 4 September 2008.doi:10.1038/455001a.
+10. Jump up^ "Sandia sees data management challenges spiral". HPC Projects. 4 August 2009.
+11. Jump up^ Reichman, O.J.; Jones, M.B.; Schildhauer, M.P. (2011). "Challenges and Opportunities of Open Data in Ecology". Science 331 (6018): 703–5. doi:10.1126/science.1197962.
+12. Jump up^ "Data Crush by Christopher Surdak". Retrieved 14 February 2014.
+13. Jump up^ Hellerstein, Joe (9 November 2008). "Parallel Programming in the Age of Big Data".Gigaom Blog.
+14. Jump up^ Segaran, Toby; Hammerbacher, Jeff (2009). Beautiful Data: The Stories Behind Elegant Data Solutions. O'Reilly Media. p. 257. ISBN 978-0-596-15711-1.
+15. ^ Jump up to:a b Hilbert & López 2011
+16. Jump up^ "IBM What is big data? — Bringing big data to the enterprise". www.ibm.com. Retrieved 2013-08-26.
+17. Jump up^ Oracle and FSN, "Mastering Big Data: CFO Strategies to Transform Insight into Opportunity", December 2012
+18. Jump up^ Jacobs, A. (6 July 2009). "The Pathologies of Big Data". ACMQueue.
+19. Jump up^ Magoulas, Roger; Lorica, Ben (February 2009). "Introduction to Big Data". Release 2.0 (Sebastopol CA: O’Reilly Media) (11).
+20. ^ Jump up to:a b Snijders, C., Matzat, U., & Reips, U.-D. (2012). ‘Big Data’: Big gaps of knowledge in the field of Internet. International Journal of Internet Science, 7, 1-5.http://www.ijis.net/ijis7_1/ijis7_1_editorial.html
+21. Jump up^ Laney, Douglas. "3D Data Management: Controlling Data Volume, Velocity and Variety". Gartner. Retrieved 6 February 2001.
+22. Jump up^ Beyer, Mark. "Gartner Says Solving 'Big Data' Challenge Involves More Than Just Managing Volumes of Data". Gartner. Archived from the original on 10 July 2011. Retrieved 13 July 2011.
+23. Jump up^ Laney, Douglas. "The Importance of 'Big Data': A Definition". Gartner. Retrieved 21 June 2012.
+24. Jump up^ "What is Big Data?". Villanova University.
+25. ^ Jump up to:a b Billings S.A. "Nonlinear System Identification: NARMAX Methods in the Time, Frequency, and Spatio-Temporal Domains". Wiley, 2013
+26. Jump up^ Delort P., Big data Paris 2013 http://www.andsi.fr/tag/dsi-big-data/
+27. Jump up^ Delort P., Big Data car Low-Density Data ? La faible densité en information comme facteur discriminant http://lecercle.lesechos.fr/entrepreneur/tendances-innovation/221169222/big-data-low-density-data-faible-densite-information-com
+28. Jump up^ "LHC Brochure, English version. A presentation of the largest and the most powerful particle accelerator in the world, the Large Hadron Collider (LHC), which started up in 2008. Its role, characteristics, technologies, etc. are explained for the general public.".CERN-Brochure-2010-006-Eng. LHC Brochure, English version. CERN. Retrieved 20 January 2013.
+29. Jump up^ "LHC Guide, English version. A collection of facts and figures about the Large Hadron Collider (LHC) in the form of questions and answers.". CERN-Brochure-2008-001-Eng. LHC Guide, English version. CERN. Retrieved 20 January 2013.
+30. Jump up^ Brumfiel, Geoff (19 January 2011). "High-energy physics: Down the petabyte highway". Nature 469. pp. 282–83. doi:10.1038/469282a.
+31. Jump up^ Delort P., OECD ICCP Technology Foresight Forum, 2012.http://www.oecd.org/sti/ieconomy/Session_3_Delort.pdf#page=6
+32. Jump up^ Webster, Phil. "Supercomputing the Climate: NASA's Big Data Mission". CSC World. Computer Sciences Corporation. Retrieved 2013-01-18.
+33. Jump up^ Kalil, Tom. "Big Data is a Big Deal". White House. Retrieved 26 September 2012.
+34. Jump up^ Executive Office of the President (March 2012). "Big Data Across the Federal Government". White House. Retrieved 26 September 2012.
+35. Jump up^ "How big data analysis helped President Obama defeat Romney in 2012 Elections". Bosmol Social Media News. 8 February 2013. Retrieved 9 March 2013.
+36. Jump up^ Hoover, J. Nicholas. "Government's 10 Most Powerful Supercomputers". Information Week. UBM. Retrieved 26 September 2012.
+37. Jump up^ Bamford, James (15 March 2012). "The NSA Is Building the Country’s Biggest Spy Center (Watch What You Say)". Wired Magazine. Retrieved 2013-03-18.
+38. Jump up^ "Groundbreaking Ceremony Held for $1.2 Billion Utah Data Center". National Security Agency Central Security Service. Retrieved 2013-03-18.
+39. Jump up^ Hill, Kashmir. "TBlueprints Of NSA's Ridiculously Expensive Data Center In Utah Suggest It Holds Less Info Than Thought". Forbes. Retrieved 2013-10-31.
+40. Jump up^ Layton, Julia. "Amazon Technology". Money.howstuffworks.com. Retrieved 2013-03-05.
+41. Jump up^ "Scaling Facebook to 500 Million Users and Beyond". Facebook.com. Retrieved 2013-07-21.
+42. Jump up^ "FICO® Falcon® Fraud Manager". Fico.com. Retrieved 2013-07-21.
+43. Jump up^ "eBay Study: How to Build Trust and Improve the Shopping Experience". Knowwpcarey.com. 2012-05-08. Retrieved 2013-03-05.
+44. Jump up^ Leading Priorities for Big Data for Business and IT. eMarketer. October 2013. Retrieved January 2014.
+45. Jump up^ Wingfield, Nick (2013-03-12). "Predicting Commutes More Accurately for Would-Be Home Buyers - NYTimes.com". Bits.blogs.nytimes.com. Retrieved 2013-07-21.
+46. Jump up^ UN GLobal Pulse (2012). Big Data for Development: Opportunities and Challenges (White p. by Letouzé, E.). New York: United Nations. Retrieved fromhttp://www.unglobalpulse.org/projects/BigDataforDevelopment
+47. Jump up^ WEF (World Economic Forum), & Vital Wave Consulting. (2012). Big Data, Big Impact: New Possibilities for International Development. World Economic Forum. Retrieved August 24, 2012, from http://www.weforum.org/reports/big-data-big-impact-new-possibilities-international-development
+48. ^ Jump up to:a b c d "Big Data for Development: From Information- to Knowledge Societies", Martin Hilbert (2013), SSRN Scholarly Paper No. ID 2205145). Rochester, NY: Social Science Research Network; http://papers.ssrn.com/abstract=2205145
+49. Jump up^ "Elena Kvochko, Four Ways To talk About Big Data (Information Communication Technologies for Development Series)". worldbank.org. Retrieved 2012-05-30.
+50. Jump up^ "What Is the Content of the World's Technologically Mediated Information and Communication Capacity: How Much Text, Image, Audio, and Video?", Martin Hilbert (2014), The Information Society; free access to the article through this link: martinhilbert.net/WhatsTheContent_Hilbert.pdf
+51. Jump up^ Bertolucci, Jeff "Hadoop: From Experiment To Leading Big Data Platform", "Information Week", 2013. Retrieved on 14 November 2013.
+52. Jump up^ Webster, John. "MapReduce: Simplified Data Processing on Large Clusters", "Search Storage", 2004. Retrieved on 25 March 2013.
+53. Jump up^ "Big Data Solution Offering". MIKE2.0. Retrieved 8 Dec 2013.
+54. Jump up^ "Big Data Definition". MIKE2.0. Retrieved 9 March 2013.
+55. Jump up^ Boja, C; Pocovnicu, A; B?t?gan, L. (2012). "Distributed Parallel Architecture for Big Data". Informatica Economica 16 (2): 116–127.
+56. Jump up^ Manyika, James; Chui, Michael; Bughin, Jaques; Brown, Brad; Dobbs, Richard; Roxburgh, Charles; Byers, Angela Hung (May 2011). Big Data: The next frontier for innovation, competition, and productivity. McKinsey Global Institute.
+57. Jump up^ "Future Directions in Tensor-Based Computation and Modeling". May 2009.
+58. Jump up^ Lu, Haiping; Plataniotis, K.N.; Venetsanopoulos, A.N. (2011). "A Survey of Multilinear Subspace Learning for Tensor Data". Pattern Recognition 44 (7): 1540–1551.doi:10.1016/j.patcog.2011.01.004.
+59. Jump up^ Monash, Curt (30 April 2009). "eBay’s two enormous data warehouses".
+Monash, Curt (6 October 2010). "eBay followup — Greenplum out, Teradata > 10 petabytes, Hadoop has some value, and more".
+60. Jump up^ "Resources on how Topological Data Analysis is used to analyze big data". Ayasdi.
+61. Jump up^ CNET News (April 1, 2011). "Storage area networks need not apply".
+62. Jump up^ "How New Analytic Systems will Impact Storage". September 2011.
+63. Jump up^ http://ubconferences.org/ March 2014.
+64. Jump up^ "Obama Administration Unveils "Big Data" Initiative:Announces $200 Million In New R&D Investments". The White House.
+65. Jump up^ "AMPLab at the University of California, Berkeley". Amplab.cs.berkeley.edu. Retrieved 2013-03-05.
+66. Jump up^ "NSF Leads Federal Efforts In Big Data". National Science Foundation (NSF). 29 March 2012.
+67. Jump up^ Timothy Hunter; Teodor Moldovan; Matei Zaharia; Justin Ma; Michael Franklin; Pieter Abbeel; Alexandre Bayen (October 2011). "Scaling the Mobile Millennium System in the Cloud".
+68. Jump up^ David Patterson (5 December 2011). "Computer Scientists May Have What It Takes to Help Cure Cancer". The New York Times.
+69. Jump up^ "Secretary Chu Announces New Institute to Help Scientists Improve Massive Data Set Research on DOE Supercomputers". "energy.gov".
+70. Jump up^ "Governor Patrick announces new initiative to strengthen Massachusetts’ position as a World leader in Big Data". Commonwealth of Massachusetts.
+71. Jump up^ "Big Data @ CSAIL". Bigdata.csail.mit.edu. 2013-02-22. Retrieved 2013-03-05.
+72. Jump up^ "Big Data Public Private Forum". Cordis.europa.eu. 2012-09-01. Retrieved 2013-03-05.
+73. Jump up^ "Alan Turing Institute to be set up to research big data". BBC News. 19 March 2014. Retrieved 2014-03-19.
+74. Jump up^ "Inspiration day at University of Waterloo, Stratford Campus".http://www.betakit.com/. Retrieved 2014-02-28.
+75. ^ Jump up to:a b "Center for Intelligent Maintenance Systems (IMS Center)".
+76. Jump up^ Lee, Jay; Lapira, Edzel; Bagheri, Behrad; Kao, Hung-An (2013). "Recent Advances and Trends in Predictive Manufacturing Systems in Big Data Environment". Manufacturing Letters 1 (1).
+77. Jump up^ Preis, Tobias; Moat,, Helen Susannah; Stanley, H. Eugene; Bishop, Steven R. (2012)."Quantifying the Advantage of Looking Forward". Scientific Reports 2: 350.doi:10.1038/srep00350. PMC 3320057. PMID 22482034.
+78. Jump up^ Marks, Paul (April 5, 2012). "Online searches for future linked to economic success". New Scientist. Retrieved April 9, 2012.
+79. Jump up^ Johnston, Casey (April 6, 2012). "Google Trends reveals clues about the mentality of richer nations". Ars Technica. Retrieved April 9, 2012.
+80. Jump up^ Tobias Preis (2012-05-24). "Supplementary Information: The Future Orientation Index is available for download". Retrieved 2012-05-24.
+81. Jump up^ Philip Ball (April 26, 2013). "Counting Google searches predicts market movements".Nature. Retrieved August 9, 2013.
+82. Jump up^ Tobias Preis, Helen Susannah Moat and H. Eugene Stanley (2013). "Quantifying Trading Behavior in Financial Markets Using Google Trends". Scientific Reports 3: 1684.doi:10.1038/srep01684.
+83. Jump up^ Nick Bilton (April 26, 2013). "Google Search Terms Can Predict Stock Market, Study Finds". New York Times. Retrieved August 9, 2013.
+84. Jump up^ Christopher Matthews (April 26, 2013). "Trouble With Your Investment Portfolio? Google It!". TIME Magazine. Retrieved August 9, 2013.
+85. Jump up^ Philip Ball (April 26, 2013). "Counting Google searches predicts market movements".Nature. Retrieved August 9, 2013.
+86. Jump up^ Bernhard Warner (April 25, 2013). "'Big Data' Researchers Turn to Google to Beat the Markets". Bloomberg Businessweek. Retrieved August 9, 2013.
+87. Jump up^ Hamish McRae (April 28, 2013). "Hamish McRae: Need a valuable handle on investor sentiment? Google it". The Independent (London). Retrieved August 9, 2013.
+88. Jump up^ Richard Waters (April 25, 2013). "Google search proves to be new word in stock market prediction". Financial Times. Retrieved August 9, 2013.
+89. Jump up^ David Leinweber (April 26, 2013). "Big Data Gets Bigger: Now Google Trends Can Predict The Market". Forbes. Retrieved August 9, 2013.
+90. Jump up^ Jason Palmer (April 25, 2013). "Google searches predict market moves". BBC. Retrieved August 9, 2013.
+91. Jump up^ http://sites.tcs.com/big-data-study/manufacturing-big-data-benefits-challenges/#.Missing or empty |title= (help)
+92. Jump up^ Lee, Jay; Wu, F.; Zhao, W.; Ghaffari, M.; Liao, L (Jan 2013). "Prognostics and health management design for rotary machinery systems—Reviews, methodology and applications". Mechanical Systems and Signal Processing 42 (1).
+93. Jump up^ Graham M. (9 March 2012). "Big data and the end of theory?". The Guardian(London).
+94. Jump up^ "Good Data Won't Guarantee Good Decisions. Harvard Business Review". Shah, Shvetank; Horne, Andrew; Capellá, Jaime;. HBR.org. Retrieved 8 September 2012.
+95. Jump up^ Anderson, C. (2008, June 23). The End of Theory: The Data Deluge Makes the Scientific Method Obsolete. Wired Magazine, (Science: Discoveries).http://www.wired.com/science/discoveries/magazine/16-07/pb_theory
+96. Jump up^ Rauch, J. (2002). Seeing Around Corners. The Atlantic, (April), 35–48.http://www.theatlantic.com/magazine/archive/2002/04/seeing-around-corners/302471/
+97. Jump up^ Epstein, J. M., & Axtell, R. L. (1996). Growing Artificial Societies: Social Science from the Bottom Up. A Bradford Book.
+98. Jump up^ Delort P., Big data in Biosciences, Big Data Paris, 2012http://www.bigdataparis.com/documents/Pierre-Delort-INSERM.pdf#page=5
+99. Jump up^ Ohm, Paul. "Don't Build a Database of Ruin". Harvard Business Review.
+100. Jump up^ Darwin Bond-Graham, Iron Cagebook - The Logical End of Facebook's Patents,Counterpunch.org, 2013.12.03
+101. Jump up^ Darwin Bond-Graham, Inside the Tech industry’s Startup Conference,Counterpunch.org, 2013.09.11
+102. Jump up^ danah boyd (2010-04-29). "Privacy and Publicity in the Context of Big Data". WWW 2010 conference. Retrieved 2011-04-18.
+103. Jump up^ Jones, MB; Schildhauer, MP; Reichman, OJ; Bowers, S (2006). "The New Bioinformatics: Integrating Ecological Data from the Gene to the Biosphere" (PDF).Annual Review of Ecology, Evolution, and Systematics 37 (1): 519–544.doi:10.1146/annurev.ecolsys.37.091305.110031.
+104. ^ Jump up to:a b Boyd, D.; Crawford, K. (2012). "Critical Questions for Big Data". Information, Communication & Society 15 (5): 662. doi:10.1080/1369118X.2012.678878. edit
+105. ^ Jump up to:a b Harford, Tim (2014-03-28). "Big data: are we making a big mistake?". Financial Times. Financial Times. Retrieved 2014-04-07.
+106. Jump up^ Ioannidis, J. P. A. (2005). "Why Most Published Research Findings Are False".PLoS Medicine 2 (8): e124. doi:10.1371/journal.pmed.0020124. PMC 1182327.PMID 16060722. edit
+107. Jump up^ http://www.stanfordlawreview.org/online/privacy-and-big-data/privacy-and-big-data.Missing or empty |title= (help)
+108. Jump up^ mcast-to-monitor-customer-computers-for-malware http://gadgetwise.blogs.nytimes.com/2010/09/30/co mcast-to-monitor-customer-computers-for-malware. Missing or empty |title= (help)
+109. Jump up^ 92204577515262710139518.html http://online.wsj.com/article/SB100014240527023032 92204577515262710139518.html. Missing or empty |title= (help)
+110. Jump up^ http://www.stanfordlawreview.org/online/privacy-and-big-data/privacy-and-big-data.Missing or empty |title= (help)
+111. Jump up^ http://www.stanfordlawreview.org/online/privacy-and-big-data/privacy-and-big-data.Missing or empty |title= (help)
+112. Jump up^ Anderson, Chris (2009). Free: The Future of a radical price.
+113. Jump up^ Worstall, Time. more-people-have-mobile-phones-than-toilets "More people have mobile phones than toliets".
+114. Jump up^ Ghonim, Wael (2012). REVOLUTION 2.0: THE POWER OF THE PEOPLE IS GREATER THAN THE PEOPLE IN POWER: A MEMOIR.
+115. Jump up^ "A Different Game: Information Is Transforming Traditional Businesses,". Economist. 27 February 2010.
+116. Jump up^ http://www.stanfordlawreview.org/online/privacy-and-big-data/privacy-and-big-data.Missing or empty |title= (help)
+External links[edit]
+Wikimedia Commons has media related to Big data.
+Look up big data in Wiktionary, the free dictionary.Further reading[edit]
+* Big Data Computing and Clouds: Challenges, Solutions, and Future Directions. Marcos D. Assuncao, Rodrigo N. Calheiros, Silvia Bianchi, Marco A. S. Netto, Rajkumar Buyya. Technical Report CLOUDS-TR-2013-1, Cloud Computing and Distributed Systems Laboratory, The University of Melbourne, Dec. 17, 2013.
+* Gautam Siwach and Dr. Amir Esmailpour - Encrypted search & cluster formation in Big Data |publisher ASEE
+* "Big Data for Good". ODBMS.org. June 5, 2012. Retrieved 2013-11-12.
+* Hilbert, Martin; López, Priscila (2011). "The World's Technological Capacity to Store, Communicate, and Compute Information". Science 332 (6025): 60–65.doi:10.1126/science.1200970. PMID 21310967.
+* "The Rise of Industrial Big Data". GE Intelligent Platforms. Retrieved 2013-11-12.
+* History of Big Data Timeline. A visual history of Big Data with links to supporting articles.
+[show]
+* V
+* T
+* E
+Database models
+[show]
+* V
+* T
+* E
+Database management systems
+[show]
+* V
+* T
+* E
+Software engineeringCategories: 
+* Database management systems
+* Data management
+* Distributed computing problems
+* Technology forecasting
+* Transaction processing
+* Big data
+Navigation menu
+* Create account
+* Log in
+* Article
+* Talk
+* Read
+* Edit
+* View history
+Top of Form
+
+Bottom of Form
+* Main page
+* Contents
+* Featured content
+* Current events
+* Random article
+* Donate to Wikipedia
+* Wikimedia Shop
+Interaction
+* Help
+* About Wikipedia
+* Community portal
+* Recent changes
+* Contact page
+Tools
+Print/export
+Languages
+* ???????
+* Bosanski
+* Català
+* ?eština
+* Dansk
+* Deutsch
+* Español
+* ?????
+* Français
+* ???
+* Italiano
+* ?????
+* Nederlands
+* ???
+* O?zbekcha
+* Polski
+* Português
+* Român?
+* ???????
+* Suomi
+* Svenska
+* ???????/tatarça
+* ???
+* Türkçe
+* ??
+* Edit links
+* This page was last modified on 1 May 2014 at 13:20.
+* Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+* Privacy policy
+* About Wikipedia
+* Disclaimers
+* Contact Wikipedia
+* Developers
+* Mobile view
+* 
+* 
+
+
+Harry Potter
+From Wikipedia, the free encyclopedia
+This article is about the fantasy book series. For the titular character, see Harry Potter (character). For the film series, see Harry Potter (film series). For related topics, seeList of Harry Potter related topics. For other uses, see Harry Potter (disambiguation).
+
+Harry Potter
+The Harry Potter logo was first used for the American edition of the novel series (and some other editions worldwide), and then the film series.1. Harry Potter and the Philosopher's Stone
+2. Harry Potter and the Chamber of Secrets
+3. Harry Potter and the Prisoner of Azkaban
+4. Harry Potter and the Goblet of Fire
+5. Harry Potter and the Order of the Phoenix
+6. Harry Potter and the Half-Blood Prince
+7. Harry Potter and the Deathly HallowsAuthorJ. K. RowlingCountryUnited KingdomLanguageEnglishGenreFantasy, young-adult fiction,mystery, thriller, Bildungsroman,magical realismPublisherBloomsbury Publishing (UK)
+Arthur A. Levine Books (US)Published29 June 1997 – 21 July 2007 (initial publication)Media typePrint (hardback & paperback)
+Audiobook
+E-book (as of March 2012)[1]No. of books7Harry Potter is a series of seven fantasy novels written by the British author J. K. Rowling. The series, named after the titular character, chronicles the adventures of a young wizard, Harry Potter, and his friends Ronald Weasley and Hermione Granger, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's quest to overcome the Dark wizard Lord Voldemort, who aims to become immortal, conquer the wizarding world, subjugate non-magical people, and destroy all those who stand in his way, especially Harry Potter.
+Since the release of the first novel, Harry Potter and the Philosopher's Stone, on 30 June 1997, the books have gained immense popularity, critical acclaim, and commercial success worldwide.[2] The series has also had some share of criticism, including concern for the increasingly dark tone. As of July 2013, the book series had sold between 400 and 450 million copies, making it one of thebest-selling book series in history, and had been translated into 73 languages.[3][4] The last four books consecutively set records as the fastest-selling books in history, with the final instalment selling approximately 11 million copies in the United States within the first twenty-four hours of its release.
+A series of many genres, including fantasy, coming of age, and the British school story, (with elements of mystery, thriller, adventure, and romance), it has many cultural meanings and references.[5] According to Rowling, the main theme is death.[6] There are also many other themes in the series, such as prejudice and corruption.[7]
+The series was originally printed in English by two major publishers, Bloomsbury in the United Kingdom and Scholastic Press in the United States. The books have since been published by many publishers worldwide. The books, with the seventh book split into two parts, have been made into an eight-part film series by Warner Bros. Pictures, the highest-grossing film series of all time. The series also originated much tie-in merchandise, making the Harry Potter brand worth in excess of $15 billion.[8]
+Thanks to the success of the books and films, Harry Potter has also been used for a theme park, The Wizarding World of Harry Potter in Universal Parks & Resorts' Islands of Adventure.
+Contents
+* 1 Plot
+o 1.1 Early years
+o 1.2 Voldemort returns
+o 1.3 Supplementary works
+* 2 Structure and genre
+* 3 Themes
+* 4 Origins and publishing history
+o 4.1 Translations
+o 4.2 Completion of the series
+* 5 Achievements
+o 5.1 Cultural impact
+o 5.2 Commercial success
+o 5.3 Awards, honours, and recognition
+* 6 Reception
+o 6.1 Literary criticism
+o 6.2 Social impacts
+o 6.3 Controversies
+* 7 Adaptations
+o 7.1 Films
+o 7.2 Games
+o 7.3 Audiobooks
+o 7.4 Stage production
+* 8 Attractions
+o 8.1 United States
+o 8.2 United Kingdom
+* 9 See also
+* 10 References
+* 11 Further reading
+* 12 External links
+Plot
+Further information: Harry Potter universe
+The novels revolve around Harry Potter, an orphan who discovers at the age of eleven that he is a wizard, living within the ordinary world of non-magical people, known asMuggles.[9] His ability is inborn and such children are invited to attend an exclusive magic school that teaches the necessary skills to succeed in the wizarding world.[10] Harry becomes a student at Hogwarts School of Witchcraft and Wizardry and it is here where most of the events in the series take place. As Harry develops through his adolescence, he learns to overcome the problems that face him: magical, social and emotional, including ordinary teenage challenges such as friendships, infatuation and exams, and the greater test of preparing himself for the confrontation in the real world that lies ahead.[11]
+Each book chronicles one year in Harry's life[12] with the main narrative being set in the years 1991–98.[13] The books also contain many flashbacks, which are frequently experienced by Harry viewing the memories of other characters in a device called a Pensieve.
+The environment Rowling created is completely separate from reality yet also intimately connected to it. While the fantasy land of Narnia is an alternative universe and the Lord of the Rings' Middle-earth a mythic past, the wizarding world of Harry Potter exists in parallel within the real world and contains magical versions of the ordinary elements of everyday life. Many of its institutions and locations are recognisable, such as London.[14] It comprises a fragmented collection of overlooked hidden streets, ancient pubs, lonely country manors and secluded castles that remain invisible to the Muggle population.[10]
+Early years
+When the first novel of the series, Harry Potter and the Philosopher's Stone (published in some countries as Harry Potter and the Sorcerer's Stone), opens, it is apparent that some significant event has taken place in the wizarding world—an event so very remarkable, even the Muggles notice signs of it. The full background to this event and to the person of Harry Potter is only revealed gradually through the series. After the introductory chapter, the book leaps forward to a time shortly before Harry Potter's eleventh birthday, and it is at this point that his magical background begins to be revealed.
+Harry's first contact with the wizarding world is through a half-giant, Rubeus Hagrid, keeper of grounds and keys at Hogwarts. Hagrid reveals some of Harry's history.[15] Harry learns that as a baby he witnessed his parents' murder by the power-obsessed Dark wizard Lord Voldemort, who then attempted to kill him also.[15] For reasons not immediately revealed, the spell with which Voldemort tried to kill Harry rebounded. Harry survived with only a lightning-shaped scar on his forehead as a memento of the attack, and Voldemort disappeared afterwards. As its inadvertent saviour from Voldemort's reign of terror, Harry has become a living legend in the wizarding world. However, at the orders of the venerable and well-known wizard Albus Dumbledore, the orphaned Harry had been placed in the home of his unpleasant Muggle relatives, the Dursleys, who had him safe but hid his true heritage from him in hopes that he would grow up "normal".[15]
+With Hagrid's help, Harry prepares for and undertakes his first year of study at Hogwarts. As Harry begins to explore the magical world, the reader is introduced to many of the primary locations used throughout the series. Harry meets most of the main characters and gains his two closest friends: Ron Weasley, a fun-loving member of an ancient, large, happy, but poor wizarding family, and Hermione Granger, a gifted and very hardworking witch of non-magical parentage.[15][16] Harry also encounters the school's potions master,Severus Snape, who displays a deep and abiding dislike for him, and the Defence Against the Dark Arts teacher, Quirinus Quirrell, who later turns out to be controlled by Lord Voldemort. The plot concludes with Harry's second confrontation with Lord Voldemort, who in his quest for immortality, yearns to gain the power of the Philosopher's Stone, a substance that bestow everlasting life.[15]
+The series continues with Harry Potter and the Chamber of Secrets describing Harry's second year at Hogwarts. He and his friends investigate a 50-year-old mystery that appears tied to recent sinister events at the school. Ron's younger sister, Ginny Weasley, enrols in her first year at Hogwarts, and finds an old notebook which turns out to be Voldemort's diary from his school days. Ginny becomes possessed by Voldemort through the diary and unconsciously opens the "Chamber of Secrets," unleashing an ancient monster which begins attacking students at Hogwarts. The novel delves into the history of Hogwarts and a legend revolving around the Chamber that soon frightened everyone in the school. The book also introduces a new Defence Against the Dark Arts teacher, Gilderoy Lockhart, a highly cheerful, self-conceited know-it-all who later turns out to be a fraud. For the first time, Harry realises that racial prejudice exists in the wizarding world even before, and he learns that Voldemort's reign of terror was often directed at wizards who were descended from Muggles. Harry also learns that his ability to speak Parseltongue, the language of snakes, is rare and often associated with the Dark Arts. The novel ends after Harry saves Ginny's life by destroying a basilisk and the enchanted diary which has been the source of the problems.
+The third novel, Harry Potter and the Prisoner of Azkaban, follows Harry in his third year of magical education. It is the only book in the series which does not feature Lord Voldemort. Instead, Harry must deal with the knowledge that he has been targeted by Sirius Black, an escaped mass murderer believed to have assisted in the deaths of Harry's parents. As Harry struggles with his reaction to the dementors—dark creatures with the power to devour a human soul—which are ostensibly protecting the school, he reaches out to Remus Lupin, a Defence Against the Dark Arts teacher who is eventually revealed to be a werewolf. Lupin teaches Harry defensive measures which are well above the level of magic generally executed by people his age. Harry learns that both Lupin and Black were best friends of his father and that Black was framed by their fourth friend, Peter Pettigrew.[17] In this book, a recurring theme throughout the series is emphasised—in every book there is a new Defence Against the Dark Arts teacher, none of whom lasts more than one school year.
+Voldemort returns
+
+
+"The Elephant House" – The café in Edinburgh in which Rowling wrote the first part of Harry Potter.
+During Harry's fourth year of school (detailed in Harry Potter and the Goblet of Fire) Harry is unwillingly entered as a participant in the Triwizard Tournament, a dangerous contest where Harry must compete against a witch and a wizard "champion" from visiting schools as well as another Hogwarts student, causing Harry's friends to distance themselves from him. [18] Harry is guided through the tournament by their new Defence Against the Dark Arts professor, Alastor "Mad-Eye" Moody, who turns out to be an impostor—one of Voldemort's supporters named Barty Crouch, Jr. in disguise. The point at which the mystery is unravelled marks the series' shift from foreboding and uncertainty into open conflict. Voldemort's plan to have Crouch use the tournament to bring Harry to Voldemort succeeds. Although Harry manages to escape,Cedric Diggory, the other Hogwarts champion in the tournament, is killed by Peter Pettigrew and Voldemort re-enters the wizarding world with a physical body.
+In the fifth book, Harry Potter and the Order of the Phoenix, Harry must confront the newly resurfaced Voldemort. In response to Voldemort's reappearance, Dumbledore re-activates the Order of the Phoenix, a secret society which works from Sirius Black's dark family home to defeat Voldemort's minions and protect Voldemort's targets, especially Harry. Despite Harry's description of Voldemort's recent activities, the Ministry of Magic and many others in the magical world refuse to believe that Voldemort has returned.[19] In an attempt to counter and eventually discredit Dumbledore, who along with Harry is the most prominent voice in the wizarding world attempting to warn of Voldemort's return, the Ministry appoints Dolores Umbridge as the High Inquisitor of Hogwarts and the new Defence Against the Dark Arts teacher. She transforms the school into a dictatorial regime and refuses to allow the students to learn ways to defend themselves against dark magic.[19]
+With Ron and Hermione's suggestion, Harry reluctantly forms "Dumbledore's Army," a secret study group aimed to teach his classmates the higher-level skills of Defence Against the Dark Arts that he has learned from his previous encounters with Dark wizards. An important prophecy concerning Harry and Lord Voldemort is revealed,[20] and Harry discovers that he and Voldemort have a painful connection, allowing Harry to view some of Voldemort's actions telepathically. In the novel's climax, Harry and his friends face off against Voldemort's Death Eaters at the Ministry of Magic. Although the timely arrival of members of the Order of the Phoenix saves the children's lives, Sirius Black is killed in the conflict.
+In the sixth book, Harry Potter and the Half-Blood Prince, Voldemort begins waging open warfare. Harry and his friends are relatively protected from that danger at Hogwarts. They are subject to all the difficulties of adolescence—Harry eventually begins dating Ginny, Ron establishes a strong infatuation with fellow Hogwarts student Lavender Brown, and Hermione starts recognizing her loving feelings for Ron. Near the beginning of the novel, Harry is given an old potions textbook filled with many annotations and recommendations signed by a mysterious writer, named "the Half-Blood Prince." This book is a source of scholastic success and great recognition from their new potions master, Horace Slughorn, but because of the potency of the spells that are written in it, becomes a source of concern. Harry takes private lessons with Dumbledore, who shows him various memories concerning the early life of Voldemort in a device called the Pensieve. These reveal that Voldemort, to preserve his life, has split his soul into pieces, creating a series ofhorcruxes, evil enchanted items hidden in various locations, one of which was the diary destroyed in the second book.[21] Harry's snobbish adversary, Draco Malfoy, attempts to attack Dumbledore, and the book culminates in the killing of Dumbledore by Professor Snape, the titular Half-Blood Prince.
+Harry Potter and the Deathly Hallows, the last book in the series, begins directly after the events of the sixth book. Lord Voldemort has completed his ascension to power and gains control of the Ministry of Magic. Harry, Ron and Hermione drop out of school so that they can find and destroy Voldemort's remaining horcruxes. To ensure their own safety as well as that of their family and friends, they are forced to isolate themselves. As they search for the horcruxes, the trio learns details about Dumbledore's past, as well as Snape's true motives—he had worked on Dumbledore's behalf since the murder of Harry's mother.
+The book culminates in the Battle of Hogwarts. Harry, Ron and Hermione, in conjunction with members of the Order of the Phoenix and many of the teachers and students, defend Hogwarts from Voldemort, his Death Eaters, and various dangerous magical creatures. Several major characters are killed in the first wave of the battle, including Remus Lupinand Fred Weasley. After learning that he himself is a horcrux, Harry surrenders himself to Voldemort in the Forbidden Forest, who casts a killing curse at him. However, the defenders of Hogwarts do not surrender after learning this, but continue to fight on. Having managed to return from the dead, Harry finally faces Voldemort, whose horcruxes have all been destroyed. In the subsequent battle, Voldemort's killing curse rebounds off of Harry's spell and kills Voldemort, disintegrating his physical presence.
+An epilogue describes the lives of the surviving characters and the effects of Voldemort's death on the wizarding world.
+Supplementary works
+See also: J. K. Rowling: Philanthropy
+Rowling has expanded the Harry Potter universe with several short books produced for various charities.[22][23] In 2001, she released Fantastic Beasts and Where to Find Them(a purported Hogwarts textbook) and Quidditch Through the Ages (a book Harry reads for fun). Proceeds from the sale of these two books benefitted the charity Comic Relief.[24]In 2007, Rowling composed seven handwritten copies of The Tales of Beedle the Bard, a collection of fairy tales that is featured in the final novel, one of which was auctioned to raise money for the Children's High Level Group, a fund for mentally disabled children in poor countries. The book was published internationally on 4 December 2008.[25][26]Rowling also wrote an 800-word prequel in 2008 as part of a fundraiser organised by the bookseller Waterstones.[27] All three of these books contain extra information about the Wizarding World not included in the original novels. In 2011, Rowling launched a new website announcing an upcoming project called Pottermore.[28] Pottermore opened to the general public on 14 April 2012.[29] Pottermore allows users to be sorted, be chosen by their wand and play various minigames. The main purpose of the website however was to allow the user to journey though the story with access to content not revealed by JK Rowling previously, with over 18,000 words of additional content.[30]
+Structure and genre
+See also: Harry Potter influences and analogues
+The Harry Potter novels fall within the genre of fantasy literature; however, in many respects they are also bildungsromans, or coming of age novels,[31] and contain elements ofmystery, adventure, thriller, and romance. They can be considered part of the British children's boarding school genre, which includes Rudyard Kipling's Stalky & Co., Enid Blyton's Malory Towers, St. Clare's and the Naughtiest Girl series, and Frank Richards's Billy Bunter novels: the Harry Potter books are predominantly set in Hogwarts, a fictional British boarding school for wizards, where the curriculum includes the use of magic.[32] In this sense they are "in a direct line of descent from Thomas Hughes's Tom Brown's School Days and other Victorian and Edwardian novels of British public school life".[33][34] They are also, in the words of Stephen King, "shrewd mystery tales",[35] and each book is constructed in the manner of a Sherlock Holmes-style mystery adventure. The stories are told from a third person limited point of view with very few exceptions (such as the opening chapters of Philosopher's Stone, Goblet of Fire and Deathly Hallows and the first two chapters of Half-Blood Prince).
+In the middle of each book, Harry struggles with the problems he encounters, and dealing with them often involves the need to violate some school rules. If students are caught breaking rules, they are often disciplined by Hogwarts professors. However, the stories reach their climax in the summer term, near or just after final exams, when events escalate far beyond in-school squabbles and struggles, and Harry must confront either Voldemort or one of his followers, the Death Eaters, with the stakes a matter of life and death–a point underlined, as the series progresses, by one or more characters being killed in each of the final four books.[36][37] In the aftermath, he learns important lessons through exposition and discussions with head teacher and mentor Albus Dumbledore. In the final novel, Harry Potter and the Deathly Hallows, Harry and his friends spend most of their time away from Hogwarts, and only return there to face Voldemort at the dénouement.[36]
+Themes
+According to Rowling, a major theme in the series is death: "My books are largely about death. They open with the death of Harry's parents. There is Voldemort's obsession with conquering death and his quest for immortality at any price, the goal of anyone with magic. I so understand why Voldemort wants to conquer death. We're all frightened of it."[6]
+Academics and journalists have developed many other interpretations of themes in the books, some more complex than others, and some including political subtexts. Themes such as normality, oppression, survival, and overcoming imposing odds have all been considered as prevalent throughout the series.[38] Similarly, the theme of making one's way through adolescence and "going over one's most harrowing ordeals—and thus coming to terms with them" has also been considered.[39] Rowling has stated that the books comprise "a prolonged argument for tolerance, a prolonged plea for an end to bigotry" and that also pass on a message to "question authority and... not assume that the establishment or the press tells you all of the truth".[40]
+While the books could be said to comprise many other themes, such as power/abuse of power, love, prejudice, and free choice, they are, as Rowling states, "deeply entrenched in the whole plot"; the writer prefers to let themes "grow organically", rather than sitting down and consciously attempting to impart such ideas to her readers.[7] Along the same lines is the ever-present theme of adolescence, in whose depiction Rowling has been purposeful in acknowledging her characters' sexualities and not leaving Harry, as she put it, "stuck in a state of permanent pre-pubescence".[41] Rowling said that, to her, the moral significance of the tales seems "blindingly obvious". The key for her was the choice between what is right and what is easy, "because that ... is how tyranny is started, with people being apathetic and taking the easy route and suddenly finding themselves in deep trouble."[42]
+Origins and publishing history
+
+
+The novelist, J. K. Rowling.
+In 1990, Rowling was on a crowded train from Manchester to London when the idea for Harry suddenly "fell into her head". Rowling gives an account of the experience on her website saying:[43]
+"I had been writing almost continuously since the age of six but I had never been so excited about an idea before. I simply sat and thought, for four (delayed train) hours, and all the details bubbled up in my brain, and this scrawny, black-haired, bespectacled boy who did not know he was a wizard became more and more real to me."
+Rowling completed Harry Potter and the Philosopher's Stone in 1995 and the manuscript was sent off to several prospective agents.[44] The second agent she tried, Christopher Little, offered to represent her and sent the manuscript to Bloomsbury. After eight other publishers had rejected Philosopher's Stone, Bloomsbury offered Rowling a £2,500 advance for its publication.[45][46] Despite Rowling's statement that she did not have any particular age group in mind when beginning to write the Harry Potter books, the publishers initially targeted children aged nine to eleven.[47] On the eve of publishing, Rowling was asked by her publishers to adopt a more gender-neutral pen name in order to appeal to the male members of this age group, fearing that they would not be interested in reading a novel they knew to be written by a woman. She elected to use J. K. Rowling (Joanne Kathleen Rowling), using her grandmother's name as her second name because she has no middle name.[46][48]
+
+
+The logo used in British editions
+Harry Potter and the Philosopher's Stone was published by Bloomsbury, the publisher of all Harry Potter books in the United Kingdom, on 30 June 1997.[49] It was released in the United States on 1 September 1998 by Scholastic—the American publisher of the books—as Harry Potter and the Sorcerer's Stone,[50] after Rowling had received US$105,000 for the American rights—an unprecedented amount for a children's book by a then-unknown author.[51] Fearing that American readers would not associate the word "philosopher" with a magical theme (although the Philosopher's Stone is alchemy-related), Scholastic insisted that the book be given the title Harry Potter and the Sorcerer's Stone for the American market.
+The second book, Harry Potter and the Chamber of Secrets was originally published in the UK on 2 July 1998 and in the US on 2 June 1999. Harry Potter and the Prisoner of Azkaban was then published a year later in the UK on 8 July 1999 and in the US on 8 September 1999.[52] Harry Potter and the Goblet of Fire was published on 8 July 2000 at the same time by Bloomsbury and Scholastic.[53] Harry Potter and the Order of the Phoenix is the longest book in the series at 766 pages in the UK version and 870 pages in the US version.[54] It was published worldwide in English on 21 June 2003.[55] Harry Potter and the Half-Blood Prince was published on 16 July 2005, and it sold 9 million copies in the first 24 hours of its worldwide release.[56][57] The seventh and final novel, Harry Potter and the Deathly Hallows, was published 21 July 2007.[58] The book sold 11 million copies in the first 24 hours of release, breaking down to 2.7 million copies in the UK and 8.3 million in the US.[57]
+Translations
+Main article: Harry Potter in translation
+The series has been translated into 67 languages,[3][59] placing Rowling among the most translated authors in history.[60] The books have seen translations to diverse languages such as Azerbaijani, Ukrainian, Arabic, Urdu, Hindi, Bengali, Welsh, Afrikaans, Albanian, Latvian and Vietnamese. The first volume has been translated into Latin and even Ancient Greek,[61] making it the longest published work in Ancient Greek since the novels of Heliodorus of Emesa in the 3rd century AD.[62]
+Some of the translators hired to work on the books were well-known authors before their work on Harry Potter, such as Viktor Golyshev, who oversaw the Russian translation of the series' fifth book. The Turkish translation of books two to seven was undertaken by Sevin Okyay, a popular literary critic and cultural commentator.[63] For reasons of secrecy, translation can only start when the books are released in English; thus there is a lag of several months before the translations are available. This has led to more and more copies of the English editions being sold to impatient fans in non-English speaking countries. Such was the clamour to read the fifth book that its English language edition became the first English-language book ever to top the best-seller list in France.[64]
+The United States editions have been adapted into American English, to make them more understandable to a young American audience.[65]
+Completion of the series
+In December 2005, Rowling stated on her web site, "2006 will be the year when I write the final book in the Harry Potter series."[66] Updates then followed in her online diarychronicling the progress of Harry Potter and the Deathly Hallows, with the release date of 21 July 2007. The book itself was finished on 11 January 2007 in the Balmoral Hotel, Edinburgh, where she scrawled a message on the back of a bust of Hermes. It read: "J. K. Rowling finished writing Harry Potter and the Deathly Hallows in this room (552) on 11 January 2007."[67]
+Rowling herself has stated that the last chapter of the final book (in fact, the epilogue) was completed "in something like 1990".[68][69] In June 2006, Rowling, on an appearance on the British talk show Richard & Judy, announced that the chapter had been modified as one character "got a reprieve" and two others who previously survived the story had in fact been killed. On 28 March 2007, the cover art for the Bloomsbury Adult and Child versions and the Scholastic version were released.[70][71]
+In September 2012, Rowling mentioned in an interview that she might go back to make a "director's cut" of two of the existing Harry Potter books.[72]
+Achievements
+Cultural impact
+For more details on this topic, see Harry Potter fandom.
+
+
+"Platform 9¾" sign onLondon King's Cross railway station
+Fans of the series were so eager for the latest instalment that bookstores around the world began holding events to coincide with the midnight release of the books, beginning with the 2000 publication of Harry Potter and the Goblet of Fire. The events, commonly featuring mock sorting, games, face painting, and other live entertainment have achieved popularity with Potter fans and have been highly successful in attracting fans and selling books with nearly nine million of the 10.8 million initial print copies of Harry Potter and the Half-Blood Prince sold in the first 24 hours.[73][74] The final book in the series, Harry Potter and the Deathly Hallows became the fastest selling book in history, moving 11 million units in the first twenty-four hours of release.[75] The series has also gathered adult fans, leading to the release of two editions of each Harry Potterbook, identical in text but with one edition's cover artwork aimed at children and the other aimed at adults.[76] Besides meeting online through blogs, podcasts, and fansites, Harry Potter super-fans can also meet at Harry Potter symposia.
+The word Muggle has spread beyond its Harry Potter origins, becoming one of few pop culture words to land in the Oxford English Dictionary.[77]The Harry Potter fandom has embraced podcasts as a regular, often weekly, insight to the latest discussion in the fandom. Both MuggleCast andPotterCast[78] have reached the top spot of iTunes podcast rankings and have been polled one of the top 50 favourite podcasts.[79]
+Commercial success
+See also: List of best-selling books
+
+
+Crowd outside a book store for the midnight release of Harry Potter and the Half-Blood Prince.
+The popularity of the Harry Potter series has translated into substantial financial success for Rowling, her publishers, and other Harry Potter related license holders. This success has made Rowling the first and thus far only billionaire author.[80] The books have sold more than 400 million copies worldwide and have also given rise to the popular film adaptations produced by Warner Bros., all of which have been highly successful in their own right.[81][82] The films have in turn spawned eight video games and have led to the licensing of more than 400 additional Harry Potter products (including an iPod). The Harry Potter brand has been estimated to be worth as much as $15 billion.[8]
+The great demand for Harry Potter books motivated the New York Times to create a separate best-seller list for children's literature in 2000, just before the release of Harry Potter and the Goblet of Fire. By 24 June 2000, Rowling's novels had been on the list for 79 straight weeks; the first three novels were each on the hardcover best-seller list.[83] On 12 April 2007, Barnes & Noble declared thatDeathly Hallows had broken its pre-order record, with more than 500,000 copies pre-ordered through its site.[84] For the release ofGoblet of Fire, 9,000 FedEx trucks were used with no other purpose than to deliver the book.[85] Together, Amazon.com and Barnes & Noble pre-sold more than 700,000 copies of the book.[85] In the United States, the book's initial printing run was 3.8 million copies.[85] This record statistic was broken by Harry Potter and the Order of the Phoenix, with 8.5 million, which was then shattered by Half-Blood Prince with 10.8 million copies.[86] 6.9 million copies of Prince were sold in the U.S. within the first 24 hours of its release; in the United Kingdom more than two million copies were sold on the first day.[87] The initial U.S. print run for Deathly Hallows was 12 million copies, and more than a million were pre-ordered through Amazon and Barnes & Noble.[88]
+Awards, honours, and recognition
+The Harry Potter series have been the recipients of a host of awards since the initial publication of Philosopher's Stone including four Whitaker Platinum Book Awards (all of which were awarded in 2001),[89] three Nestlé Smarties Book Prizes (1997–1999),[90] two Scottish Arts Council Book Awards (1999 and 2001),[91] the inaugural Whitbread children's book of the year award (1999),[92] the WHSmith book of the year (2006),[93] among others. In 2000, Harry Potter and the Prisoner of Azkaban was nominated for a Hugo Award for Best Novel, and in 2001, Harry Potter and the Goblet of Fire won said award.[94] Honours include a commendation for the Carnegie Medal (1997),[95] a short listing for theGuardian Children's Award (1998), and numerous listings on the notable books, editors' Choices, and best books lists of the American Library Association, The New York Times,Chicago Public Library, and Publishers Weekly.[96]
+A 2004 study found that books in the series were commonly read aloud in elementary schools in San Diego County, California.[97] Based on a 2007 online poll, the National Education Association in the U.S. listed the series in its "Teachers' Top 100 Books for Children."[98] Three of the books (Sorcerer’s Stone, Prisoner of Azkaban, and Goblet of Fire) were among the "Top 100 Chapter Books" of all time in a 2012 poll by School Library Journal.[99]
+Reception
+Literary criticism
+
+
+British editions of the seven Harry Potterbooks. L-R: books 6, 7, 1, 2, 3, 4, and 5.
+Early in its history, Harry Potter received positive reviews. On publication, the first volume, Harry Potter and the Philosopher's Stone, attracted attention from the Scottish newspapers, such as The Scotsman, which said it had "all the makings of a classic",[100] and The Glasgow Herald, which called it "Magic stuff".[100] Soon the English newspapers joined in, with more than one comparing it to Roald Dahl's work: The Mail on Sunday rated it as "the most imaginative debut since Roald Dahl",[100] a view echoed by The Sunday Times("comparisons to Dahl are, this time, justified"),[100] while The Guardian called it "a richly textured novel given lift-off by an inventive wit".[100]
+By the time of the release of the fifth volume, Harry Potter and the Order of the Phoenix, the books began to receive strong criticism from a number of literary scholars. Yale professor, literary scholar, and critic Harold Bloom raised criticisms of the books' literary merits, saying, "Rowling's mind is so governed by clichés and dead metaphors that she has no other style of writing."[101] A. S. Byattauthored a New York Times op-ed article calling Rowling's universe a "secondary secondary world, made up of intelligently patchworked derivative motifs from all sorts of children's literature ... written for people whose imaginative lives are confined to TV cartoons, and the exaggerated (more exciting, not threatening) mirror-worlds of soaps, reality TV and celebrity gossip".[102]
+Michael Rosen, a novelist and poet, advocated the books were not suited for children, who would be unable to grasp the complex themes. Rosen also stated that "J. K. Rowling is more of an adult writer."[103] The critic Anthony Holden wrote in The Observer on his experience of judging Harry Potter and the Prisoner of Azkaban for the 1999 Whitbread Awards. His overall view of the series was negative—"the Potter saga was essentially patronising, conservative, highly derivative, dispiritingly nostalgic for a bygone Britain", and he speaks of "pedestrian, ungrammatical prose style".[104] Ursula K. Le Guin said, "I have no great opinion of it. When so many adult critics were carrying on about the 'incredible originality' of the first Harry Potter book, I read it to find out what the fuss was about, and remained somewhat puzzled; it seemed a lively kid's fantasy crossed with a "school novel", good fare for its age group, but stylistically ordinary, imaginatively derivative, and ethically rather mean-spirited."[105]
+By contrast, author Fay Weldon, while admitting that the series is "not what the poets hoped for", nevertheless goes on to say, "but this is not poetry, it is readable, saleable, everyday, useful prose".[106] The literary critic A. N. Wilson praised the Harry Potter series in The Times, stating: "There are not many writers who have JK's Dickensian ability to make us turn the pages, to weep—openly, with tears splashing—and a few pages later to laugh, at invariably good jokes ... We have lived through a decade in which we have followed the publication of the liveliest, funniest, scariest and most moving children's stories ever written".[107] Charles Taylor of Salon.com, who is primarily a movie critic,[108] took issue with Byatt's criticisms in particular. While he conceded that she may have "a valid cultural point—a teeny one—about the impulses that drive us to reassuring pop trash and away from the troubling complexities of art",[109] he rejected her claims that the series is lacking in serious literary merit and that it owes its success merely to the childhood reassurances it offers. Taylor stressed the progressively darker tone of the books, shown by the murder of a classmate and close friend and the psychological wounds and social isolation each causes. Taylor also argued that Philosopher's Stone, said to be the most light-hearted of the seven published books, disrupts the childhood reassurances that Byatt claims spur the series' success: the book opens with news of a double murder, for example.[109]
+Stephen King called the series "a feat of which only a superior imagination is capable", and declared "Rowling's punning, one-eyebrow-cocked sense of humor" to be "remarkable". However, he wrote that despite the story being "a good one", he is "a little tired of discovering Harry at home with his horrible aunt and uncle", the formulaic beginning of all seven books.[35] King has also joked that "Rowling's never met an adverb she did not like!" He does however predict that Harry Potter "will indeed stand time's test and wind up on a shelf where only the best are kept; I think Harry will take his place with Alice, Huck, Frodo, and Dorothy and this is one series not just for the decade, but for the ages".[110]
+Social impacts
+Although Time magazine named Rowling as a runner-up for its 2007 Person of the Year award, noting the social, moral, and political inspiration she has given her fandom,[111]cultural comments on the series have been mixed. Washington Post book critic Ron Charles opined in July 2007 that the large numbers of adults reading the Potter series but few other books may represent a "bad case of cultural infantilism", and that the straightforward "good vs. evil" theme of the series is "childish". He also argued "through no fault of Rowling's", the cultural and marketing "hysteria" marked by the publication of the later books "trains children and adults to expect the roar of the coliseum, a mass-media experience that no other novel can possibly provide".[112]
+Librarian Nancy Knapp pointed out the books' potential to improve literacy by motivating children to read much more than they otherwise would.[113] Agreeing about the motivating effects, Diane Penrod also praised the books' blending of simple entertainment with "the qualities of highbrow literary fiction", but expressed concern about the distracting effect of the prolific merchandising that accompanies the book launches.[114]
+Jennifer Conn used Snape's and Quidditch coach Madam Hooch's teaching methods as examples of what to avoid and what to emulate in clinical teaching,[115] and Joyce Fields wrote that the books illustrate four of the five main topics in a typical first-year sociology class: "sociological concepts including culture, society, and socialisation; stratification andsocial inequality; social institutions; and social theory".[116]
+Jenny Sawyer wrote in Christian Science Monitor on 25 July 2007 that the books represent a "disturbing trend in commercial storytelling and Western society" in that stories "moral center [sic] have all but vanished from much of today's pop culture ... after 10 years, 4,195 pages, and over 375 million copies, J. K. Rowling's towering achievement lacks the cornerstone of almost all great children's literature: the hero's moral journey". Harry Potter, Sawyer argues, neither faces a "moral struggle" nor undergoes any ethical growth, and is thus "no guide in circumstances in which right and wrong are anything less than black and white".[117] In contrast Emily Griesinger described Harry's first passage through toPlatform 9¾ as an application of faith and hope, and his encounter with the Sorting Hat as the first of many in which Harry is shaped by the choices he makes. She also noted the "deeper magic" by which the self-sacrifice of Harry's mother protects the boy throughout the series, and which the power-hungry Voldemort fails to understand.[118]
+In an 8 November 2002 Slate article, Chris Suellentrop likened Potter to a "trust-fund kid whose success at school is largely attributable to the gifts his friends and relatives lavish upon him". Noting that in Rowling's fiction, magical ability potential is "something you are born to, not something you can achieve", Suellentrop wrote that Dumbledore's maxim that "It is our choices that show what we truly are, far more than our abilities" is hypocritical, as "the school that Dumbledore runs values native gifts above all else".[119] In a 12 August 2007 New York Times review of Deathly Hallows, however, Christopher Hitchens praised Rowling for "unmooring" her "English school story" from literary precedents "bound up with dreams of wealth and class and snobbery", arguing that she had instead created "a world of youthful democracy and diversity".[120]
+Controversies
+Main articles: Legal disputes over the Harry Potter series, Religious debates over the Harry Potter series, Politics of Harry Potter, and Tanya Grotter
+The books have been the subject of a number of legal proceedings, stemming either from claims by American Christian groups that the magic in the books promotes Wicca and witchcraft among children, or from various conflicts over copyright and trademark infringements. The popularity and high market value of the series has led Rowling, her publishers, and film distributor Warner Bros. to take legal measures to protect their copyright, which have included banning the sale of Harry Potter imitations, targeting the owners of websites over the "Harry Potter" domain name, and suing author Nancy Stouffer to counter her accusations that Rowling had plagiarised her work.[121][122][123] Various religious conservatives have claimed that the books promote witchcraft and religions such as Wicca and are therefore unsuitable for children,[124][125] while a number of critics have criticised the books for promoting various political agendas.[126][127]
+The books also aroused controversies in the literary and publishing worlds. In 1997 to 1998, Harry Potter and the Philosopher's Stone won almost all the UK awards judged by children, but none of the children's book awards judged by adults,[128] and Sandra Beckett suggested the reason was intellectual snobbery towards books that were popular among children.[129] In 1999, the winner of the Whitbread Book of the Year Award children's division was entered for the first time on the shortlist for the main award, and one judge threatened to resign if Harry Potter and the Prisoner of Azkaban was declared the overall winner; it finished second, very close behind the winner of the poetry prize,Seamus Heaney's translation of the Anglo-Saxon epic Beowulf.[129]
+In 2000, shortly before the publication of Harry Potter and the Goblet of Fire, the previous three Harry Potter books topped the New York Times fiction best-seller list and a third of the entries were children's books. The newspaper created a new children's section covering children's books, including both fiction and non-fiction, and initially counting only hardback sales. The move was supported by publishers and booksellers.[83] In 2004, The New York Times further split the children's list, which was still dominated by Harry Potterbooks into sections for series and individual books, and removed the Harry Potter books from the section for individual books.[130] The split in 2000 attracted condemnation, praise and some comments that presented both benefits and disadvantages of the move.[131] Time suggested that, on the same principle, Billboard should have created a separate "mop-tops" list in 1964 when the Beatles held the top five places in its list, and Nielsen should have created a separate game-show list when Who Wants to Be a Millionaire? dominated the ratings.[132]
+Adaptations
+Films
+Main article: Harry Potter (film series)
+
+
+The locomotive that features as the "Hogwarts Express" in the film series.
+In 1998, Rowling sold the film rights of the first four Harry Potter books to Warner Bros. for a reported £1 million ($1,982,900).[133][134]Rowling demanded the principal cast be kept strictly British, nonetheless allowing for the inclusion of Irish actors such as the late Richard Harris as Dumbledore, and for casting of French and Eastern Europe actors in Harry Potter and the Goblet of Fire where characters from the book are specified as such.[135] After many directors including Steven Spielberg, Terry Gilliam, Jonathan Demme, and Alan Parkerwere considered, Chris Columbus was appointed on 28 March 2000 as director for Harry Potter and the Philosopher's Stone (titled "Harry Potter and the Sorcerer's Stone" in the United States), with Warner Bros. citing his work on other family films such as Home Alone andMrs. Doubtfire and proven experience with directing children as influences for their decision.[136]
+After extensive casting, filming began in October 2000 at Leavesden Film Studios and in London itself, with production ending in July 2001.[137][138] Philosopher's Stone was released on 14 November 2001. Just three days after the film's release, production for Harry Potter and the Chamber of Secrets, also directed by Columbus, began. Filming was completed in summer 2002, with the film being released on 15 November 2002.[139] Daniel Radcliffe portrayed Harry Potter, doing so for all succeeding films in the franchise.
+Columbus declined to direct Harry Potter and the Prisoner of Azkaban, only acting as producer. Mexican director Alfonso Cuarón took over the job, and after shooting in 2003, the film was released on 4 June 2004. Due to the fourth film beginning its production before the third's release, Mike Newell was chosen as the director for Harry Potter and the Goblet of Fire, released on 18 November 2005.[140] Newell became the first British director of the series, with television director David Yates following suit after he was chosen to helmHarry Potter and the Order of the Phoenix. Production began in January 2006 and the film was released the following year in July 2007.[141] After executives were "really delighted" with his work on the film, Yates was selected to direct Harry Potter and the Half-Blood Prince, which was released on 15 July 2009.[142][143][144][145]
+
+
+Gringotts Wizarding Bank as seen in the film series.
+In March 2008, Warner Bros. President and COO Alan F. Horn announced that the final instalment in the series, Harry Potter and the Deathly Hallows, would be released in two cinematic parts: Part 1 on 19 November 2010 and Part 2 on 15 July 2011. Production of both parts started in February 2009, with the final day of principal photography taking place on 12 June 2010.[146][147]
+Rowling had creative control on the film series, observing the filmmaking process of Philosopher's Stone and serving as producer on the two-partDeathly Hallows, alongside David Heyman and David Barron.[148] The Harry Potter films have been top-rank box office hits, with all eight releases on the list of highest-grossing films worldwide. Philosopher's Stone was the highest-grossing Harry Potter film up until the release of the final instalment of the series, Deathly Hallows, while Prisoner of Azkaban grossed the least.[149] As well as being a financial success, the film series has also been a success among film critics.[150][151]
+Opinions of the films are generally divided among fans, with one group preferring the more faithful approach of the first two films, and another group preferring the more stylised character-driven approach of the later films.[152] Rowling has been constantly supportive of all the films and evaluated Deathly Hallows as her "favourite one" in the series.[153][154][155][156] She wrote on her website of the changes in the book-to-film transition, "It is simply impossible to incorporate every one of my storylines into a film that has to be kept under four hours long. Obviously films have restrictions novels do not have, constraints of time and budget; I can create dazzling effects relying on nothing but the interaction of my own and my readers' imaginations".[157]
+At the 64th British Academy Film Awards in February 2011, Rowling was joined by producers David Heyman and David Barron along with directors David Yates, Alfonso Cuarón and Mike Newell in collecting the Michael Balcon Award for Outstanding British Contribution to Cinema on behalf of all the films in the series. Actors Rupert Grint and Emma Watson, who play main characters Ron Weasley and Hermione Granger, were also in attendance.[158][159]
+Games
+There are eleven Harry Potter video games, eight of which correspond with the films and books, and three other spin-offs. The film/book based games are produced by Electronic Arts, as was Harry Potter: Quidditch World Cup, with the game version of the first entry in the series, Philosopher's Stone, being released in November 2001. The video games are released to coincide with the films, containing scenery and details from the films as well as the tone and spirit of the books. Objectives usually occur in and around Hogwarts, along with various other magical areas. The story and design of the games follows the selected film's characterisation and plot; EA worked closely with Warner Brothers to include scenes from the films. The last game in the series, Deathly Hallows, was split with Part 1 released in November 2010 and Part 2 debuting on consoles in July 2011. The two-part game forms the first entry to convey an intense theme of action and violence, with the gameplay revolving around a third-person shooter style format.[160][161] The other spin-offs games, LEGO Harry Potter: Years 1–4 and LEGO Harry Potter: Years 5–7 are developed by Traveller's Tales and published by Warner Bros. Interactive Entertainment. A number of other non-interactive media games have been released; board games such as Cluedo Harry Potter Edition, Scene It? Harry Potter and Lego Harry Potter models, which are influenced by the themes of both the novels and films.
+* 2001: Harry Potter and the Philosopher's Stone
+* 2002: Harry Potter and the Chamber of Secrets
+* 2004: Harry Potter and the Prisoner of Azkaban
+* 2005: Harry Potter and the Goblet of Fire
+* 2007: Harry Potter and the Order of the Phoenix
+* 2009: Harry Potter and the Half-Blood Prince
+* 2010: Harry Potter and the Deathly Hallows – Part 1
+* 2011: Harry Potter and the Deathly Hallows – Part 2
+Audiobooks
+All seven Harry Potter books have been released in unabridged audiobook versions, with Stephen Fry reading for listeners in the UK, and Jim Dale voicing the series for the American editions.[162][163]
+Stage production
+On 20 December 2013 J. K. Rowling announced that she was working on a Harry Potter–based play for which she would be one of the producers. In her statement, the author said that the play will "explore the previously untold story of Harry's early years as an orphan and outcast". British theatre producers Sonia Friedman and Colin Callender will be the co-producers.[164][165]
+Attractions
+United States
+Main article: The Wizarding World of Harry Potter (Islands of Adventure)
+
+
+Hogwarts Castle as depicted in the Wizarding World of Harry Potter located in Universal Orlando Resort's Island of Adventure.
+After the success of the films and books, Universal and Warner Brothers announced they would create "The Wizarding World of Harry Potter," a new Harry Potter-themed expansion to the Islands of Adventure theme park at Universal Orlando Resort in Florida. The new land, promoted as the seventh themed "island" of the park, was built from land reserved for expansion outside of the park's original border, as well as from much of the existing "island," The Lost Continent. A soft opening was held at the end of March 2010, with the land opening on 16 June 2010 for reserved guests. The land officially opened to the public on 18 June 2010.[166]
+Guests enter the land through a recreation of the Hogsmeade station,[167] leading into the village of Hogsmeade, with a forced-perspectiveHogwarts castle at the very end of the street. The castle contains the expansion's centrepiece attraction, Harry Potter & the Forbidden Journey, a KUKA arm attraction which takes passengers through many realistic scenes influenced by the movies and books, including soaring over Hogwarts, getting involved in a Quidditch match, and having close encounters with dragons, dementors, and the Whomping Willow.[168] Other attractions include a twin high-speed rollercoaster named the Dragon Challenge, a renovation of the previously existing rollercoaster, Dueling Dragons, and a family roller coaster called Flight of the Hippogriff, a renovation of the previously existing ride, Flying Unicorn. In addition to the three rides are several themed shops and restaurants, heavily inspired by their appearances in the books and films: Honeydukes sells sweets, such as chocolate frogs and Bertie Bott's Every-Flavour Beans, Ollivander's offers personalised magic wands, Zonko's Joke Shop sells various items including Sneakoscopes, and the Three Broomsticks serves food and drink, most notably Butterbeer and pumpkin juice.
+Developed at a cost of $265 million, the new land "has seen capacity crowds [and] waits of up to two hours just to enter the ... merchandise shop." Islands of Adventure saw a massive increase in attendance following the expansion, seeing gains of as much as 36%,[169] a period during which attendance to competitor resort Walt Disney World dropped slightly.[170] Disney had itself entered negotiations for a Harry Potter-themed expansion, but ultimately turned down the opportunity.[171]
+United Kingdom
+In March 2011, Warner Bros. announced plans to build a tourist attraction in the United Kingdom to showcase the Harry Potter film series. Warner Bros. Studio Tour London is a behind-the-scenes walking tour featuring authentic sets, costumes and props from the film series. The attraction is located at Warner Bros. Studios, Leavesden, where all eight of the Harry Potter films were made. Warner Bros. constructed two new sound stages to house and showcase the famous sets from each of the British-made productions, following a £100 million investment.[172] It opened to the public in March 2012.[173]
+See also
+* Book: Harry Potter* Mary GrandPré
+* Children's literature portal
+ 
+* Harry Potter portalReferences
+1. Jump up^ PETER SVENSSON 27 March 2012 (27 March 2012). "Harry Potter breaks e-book lockdown - Yahoo! News". News.yahoo.com. Retrieved 29 July 2013.
+2. Jump up^ Allsobrook, Dr. Marian (18 June 2003). "Potter's place in the literary canon". BBC News. Retrieved 15 October 2007.
+3. ^ Jump up to:a b "Rowling 'makes £5 every second'". British Broadcasting Corporation. 3 October 2008. Retrieved 17 October 2008.
+4. Jump up^ TIME Staff (31 July 2013). "Because It’s His Birthday: Harry Potter, By the Numbers". Time. Archived from the original on 1 August 2013.
+5. Jump up^ Sources that refer to the many genres, cultural meanings and references of the series include:
+* Fry, Stephen (10 December 2005). "Living with Harry Potter". BBC Radio 4. Archived from the original on 2 June 2009. Retrieved 10 December 2005.
+* Jenson, Jeff (7 September 2000). "Harry Up!". Entertainment Weekly. Retrieved 20 September 2007.
+* Nancy Carpentier Brown (2007). "The Last Chapter". Our Sunday Visitor. Retrieved 28 April 2009.
+* J. K. Rowling. "J. K. Rowling at the Edinburgh Book Festival". Archived from the original on 20 August 2006. Retrieved 10 October 2006.
+6. ^ Jump up to:a b Geordie Greig (11 January 2006). "'There would be so much to tell her...'". The Daily Telegraph (London). Retrieved 4 April 2007.
+7. ^ Jump up to:a b Lizo Mzimba (28 July 2008). "Interview with Steve Kloves and J.K. Rowling". Quick Quotes Quill. Archived from the original on 13 May 2010.
+8. ^ Jump up to:a b Thompson, Susan (2 April 2008). "Business big shot: Harry Potter author JK Rowling". The Times (London). Retrieved 14 July 2009.
+9. Jump up^ Lemmerman, Kristin (14 July 2000). "Review: Gladly drinking from Rowling's 'Goblet of Fire'". CNN. Retrieved 28 September 2008.
+10. ^ Jump up to:a b "A Muggle's guide to Harry Potter". BBC News. 28 May 2004. Retrieved 22 August 2008.
+11. Jump up^ Hajela, Deepti (14 July 2005). "Plot summaries for the first five Potter books". SouthFlorida.com. Archived from the original on 15 May 2010. Retrieved 29 September 2008.
+12. Jump up^ Foster, Julie (October 2001). "Potter books: Wicked witchcraft?". Koinonia House. Retrieved 15 May 2010.
+13. Jump up^
+* The years are first established by Nearly Headless Nick's deathday cake in Chamber of Secrets, which indicates that Harry's second year takes place from 1992–93.Rowling, J. K. (1998). "The Deathday Party". Harry Potter and the Chamber of Secrets. Bloomsbury. ISBN 0747538492.
+* The years are also established by the death of date of Harry's parents, given inDeathly Hallows. Rowling, J. K. (2007). "Godric's Hollow". Harry Potter and the Deathly Hallows. Bloomsbury. ISBN 1551929767.
+14. Jump up^ Farndale, Nigel (15 July 2007). "Harry Potter and the parallel universe". The Daily Telegraph (London). Retrieved 28 September 2008.
+15. ^ Jump up to:a b c d e Memmott, Carol (19 July 2007). "The Harry Potter stories so far: A quick CliffsNotes review". USA Today. Retrieved 28 September 2008.
+16. Jump up^ "J K Rowling at the Edinburgh Book Festival". J.K. Rowling.com. 15 August 2004. Archived from the original on 23 August 2008. Retrieved 27 September 2008.
+17. Jump up^ Maguire, Gregory (5 September 1999). "Harry Potter and the Prisoner of Azkaban".The New York Times. Retrieved 28 September 2008.
+18. Jump up^ King, Stephen (23 July 2000). "Harry Potter and the Goblet of Fire". The New York Times. Retrieved 28 September 2008.
+19. ^ Jump up to:a b Leonard, John (13 July 2003). "'Harry Potter and the Order of the Phoenix'". The New York Times. Retrieved 28 September 2008.
+20. Jump up^ A Whited, Lana (2004). The Ivory Tower and Harry Potter: Perspectives on a Literary Phenomenon. University of Missouri Press. p. 371. ISBN 978-0-8262-1549-9.
+21. Jump up^ Kakutani, Michiko (16 July 2005). "Harry Potter Works His Magic Again in a Far Darker Tale". The New York Times. Retrieved 28 September 2008.
+22. Jump up^ Atkinson, Simon (19 July 2007). "How Rowling conjured up millions". BBC News. Retrieved 7 September 2008.
+23. Jump up^ "Comic Relief : Quidditch through the ages". Albris. Retrieved 7 September 2008.
+24. Jump up^ "The Money". Comic Relief. Archived from the original on 15 May 2010. Retrieved 25 October 2007.
+25. Jump up^ "JK Rowling book fetches £2 m". BBC News. 13 December 2007. Retrieved 13 December 2007.
+26. Jump up^ "The Tales of Beedle the Bard". Amazon.com. Retrieved 14 December 2007.
+27. Jump up^ Williams, Rachel (29 May 2008). "Rowling pens Potter prequel for charities". The Guardian (London). Retrieved 30 March 2010. Retrieved 31 May 2008.
+28. Jump up^ "J.K. Rowling Has Mysterious New Potter Website". ABC News. Associated Press. 16 June 2011. Retrieved 16 June 2011.
+29. Jump up^ "Waiting for Pottermore?". Pottermore Insider. 8 March 2012. Retrieved 9 March 2012.
+30. Jump up^ Gilder Cooke, Sonia van (23 June 2011). "‘Pottermore’ Secrets Revealed: J.K. Rowling’s New Site is E-Book Meets Interactive World". Time. Retrieved 6 January 2013.
+31. Jump up^ Anne Le Lievre, Kerrie (2003). "Wizards and wainscots: generic structures and genre themes in the Harry Potter series". CNET Networks. Archived from the original on 29 May 2010. Retrieved 1 September 2008.
+32. Jump up^ "Harry Potter makes boarding fashionable". BBC. 13 December 1999. Retrieved 1 September 2008.
+33. Jump up^ Ellen Jones, Leslie (2003). JRR Tolkien: A Biography. Greenwood Press. p. 16.ISBN 978-0-313-32340-9.
+34. Jump up^ A Whited, Lana (2004). The Ivory Tower and Harry Potter: Perspectives on a Literary Phenomenon. University of Missouri Press. p. 28. ISBN 978-0-8262-1549-9.
+35. ^ Jump up to:a b King, Stephen (23 July 2000). "Wild About Harry". The New York Times. Retrieved 9 August 2010. "...the Harry Potter books are, at heart, satisfyingly shrewd mystery tales."
+36. ^ Jump up to:a b Grossman, Lev (28 June 2007). "Harry Potter's Last Adventure". Time Inc. Retrieved 1 September 2008.
+37. Jump up^ "Two characters to die in last 'Harry Potter' book: J.K. Rowling". CBC. 26 June 2006. Archived from the original on 12 May 2010. Retrieved 1 September 2008.
+38. Jump up^ Greenwald, Janey; Greenwald, J (Fall 2005). "Understanding Harry Potter: Parallels to the Deaf World" (Free full text). The Journal of Deaf Studies and Deaf Education 10(4): 442–450. doi:10.1093/deafed/eni041. PMID 16000691.
+39. Jump up^ Duffy, Edward (2002). "Sentences in Harry Potter, Students in Future Writing Classes".Rhetoric Review 21 (2): 177. doi:10.1207/S15327981RR2102_03.
+40. Jump up^ "JK Rowling outs Dumbledore as gay". BBC News. 21 October 2007. Retrieved 21 October 2007.
+41. Jump up^ "About the Books: transcript of J.K. Rowling's live interview on Scholastic.com". Quick-Quote-Quill. 16 February 1999. Archived from the original on 13 May 2010. Retrieved 28 July 2008.
+42. Jump up^ Max, Wyman (26 October 2000). ""You can lead a fool to a book but you cannot make them think": Author has frank words for the religious right". The Vancouver Sun (British Columbia). Retrieved 28 July 2008.
+43. Jump up^ Rowling, JK (2006). "Biography". JKRowling.com. Archived from the original on 21 April 2006. Retrieved 21 May 2006.
+44. Jump up^ "Final Harry Potter book set for release". Euskal Telebista. 15 July 2007. Retrieved 21 August 2008.
+45. Jump up^ Lawless, John (2005). "Nigel Newton". The McGraw-Hill Companies Inc. Retrieved 9 September 2006.
+46. ^ Jump up to:a b A Whited, Lana (2004). The Ivory Tower and Harry Potter: Perspectives on a Literary Phenomenon. University of Missouri Press. p. 351. ISBN 978-0-8262-1549-9.
+47. Jump up^ Huler, Scott. "The magic years". The News & Observer. Retrieved 28 September 2008.[dead link]
+48. Jump up^ Savill, Richard (21 June 2001). "Harry Potter and the mystery of J K's lost initial".The Daily Telegraph (London). Retrieved 27 September 2008.
+49. Jump up^ "The Potter phenomenon". BBC News. 18 February 2003. Retrieved 27 September 2008.
+50. Jump up^ "Wild about Harry". NYP Holdings, Inc. 2 July 2007. Retrieved 27 September 2008.[dead link]
+51. Jump up^ Rozhon, Tracie (21 April 2007). "A Brief Walk Through Time at Scholastic". The New York Times. p. C3. Retrieved 21 April 2007.
+52. Jump up^ "A Potter timeline for muggles". Toronto Star. 14 July 2007. Retrieved 27 September 2008.
+53. Jump up^ "Speed-reading after lights out". London: Guardian News and Media Limited. 19 July 2000. Retrieved 27 September 2008.
+54. Jump up^ Harmon, Amy (14 July 2003). "Harry Potter and the Internet Pirates". The New York Times. Retrieved 21 August 2008.
+55. Jump up^ Cassy, John (16 January 2003). "Harry Potter and the hottest day of summer". The Guardian (London: Guardian News and Media Limited). Retrieved 27 September 2008.
+56. Jump up^ "July date for Harry Potter book". BBC News. 21 December 2004. Retrieved 27 September 2008.
+57. ^ Jump up to:a b "Harry Potter finale sales hit 11m". BBC News. 23 July 2007. Retrieved 21 August 2008.
+58. Jump up^ "Rowling unveils last Potter date". BBC News. 1 February 2007. Retrieved 27 September 2008.
+59. Jump up^ Dammann, Guy (18 June 2008). "Harry Potter breaks 400m in sales". London: Guardian News and Media Limited. Retrieved 17 October 2008.
+60. Jump up^ KMaul (2005). "Guinness World Records: L. Ron Hubbard Is the Most Translated Author". The Book Standard. Archived from the original on 12 May 2010. Retrieved 19 July 2007.
+61. Jump up^ Wilson, Andrew (2006). "Harry Potter in Greek". Andrew Wilson. Retrieved 28 July 2008.
+62. Jump up^ Castle, Tim (2 December 2004). "Harry Potter? It's All Greek to Me". Reuters. Retrieved 28 July 2008.
+63. Jump up^ Güler, Emrah (2005). "Not lost in translation: Harry Potter in Turkish". The Turkish Daily News. Archived from the original on 15 May 2010. Retrieved 9 May 2007.
+64. Jump up^ Staff Writer (1 July 2003). "OOTP is best seller in France — in English!". BBC News. Retrieved 28 July 2008.
+65. Jump up^ "Differences in the UK and US Versions of Four Harry Potter Books". FAST US-1. 21 January 2008. Retrieved 17 August 2008.
+66. Jump up^ "J.K.Rowling Official Site. Section: Welcome!". 25 December 2005. Archived fromthe original on 30 December 2005. Retrieved 18 July 2011.
+67. Jump up^ "Potter author signs off in style". BBC News. 2 February 2007. Retrieved 5 January 2010.
+68. Jump up^ "Rowling to kill two in final book". BBC News. 27 June 2006. Retrieved 25 July 2007.
+69. Jump up^ "Harry Potter and Me". BBC News. 28 December 2001. Retrieved 12 September 2007.
+70. Jump up^ "Harry Potter and the Deathly Hallows at Bloomsbury Publishing". Bloomsbury Publishing. Retrieved 28 September 2008.
+71. Jump up^ "Cover Art: Harry Potter 7". Scholastic. Archived from the original on 12 May 2010. Retrieved 28 September 2008.
+72. Jump up^ "JK Rowling mulls 'director's cut' of Harry Potter books". BBC News. 26 September 2012. Retrieved 9 September 2013.
+73. Jump up^ Freeman, Simon (18 July 2005). "Harry Potter casts spell at checkouts". The Times(London). Retrieved 29 July 2008.
+74. Jump up^ "Potter book smashes sales records". BBC News. 18 July 2005. Retrieved 29 July 2008.
+75. Jump up^ "'Harry Potter' tale is fastest-selling book in history". The New York Times. 23 July 2007. Retrieved 30 March 2010.
+76. Jump up^ "Harry Potter at Bloomsbury Publishing — Adult and Children Covers". Bloomsbury Publishing. Retrieved 18 August 2008.
+77. Jump up^ McCaffrey, Meg (1 May 2003). "'Muggle' Redux in the Oxford English Dictionary". School Library Journal. Retrieved 1 May 2007.
+78. Jump up^ "Book corner: Secrets of Podcasting". Apple Inc. 8 September 2005. Retrieved 31 January 2007.
+79. Jump up^ "Mugglenet.com Taps Limelight's Magic for Podcast Delivery of Harry Potter Content". PR Newswire. 8 November 2005. Retrieved 31 January 2007.
+80. Jump up^ Watson, Julie (26 February 2004). "J. K. Rowling And The Billion-Dollar Empire".Forbes. Retrieved 3 December 2007.
+81. Jump up^ "All Time Worldwide Box Office Grosses". Box Office Mojo, LLC. 1998–2008. Retrieved 29 July 2008.
+82. Jump up^ Booth, Jenny (1 November 2007). "J.K. Rowling publishes Harry Potter spin-off". London: Telegraph.com. Retrieved 28 September 2008.
+83. ^ Jump up to:a b Smith, Dinitia (24 June 2000). "The Times Plans a Children's Best-Seller List".The New York Times. Retrieved 30 September 2008.
+84. Jump up^ "New Harry Potter breaks pre-order record". RTÉ.ie Entertainment. 13 April 2007. Retrieved 23 April 2007.
+85. ^ Jump up to:a b c Fierman, Daniel (31 August 2005). "Wild About Harry". Entertainment Weekly(ew.com). Retrieved 4 March 2007. "When I buy the books for my grandchildren, I have them all gift wrapped but one...that's for me. And I have not been 12 for over 50 years."
+86. Jump up^ "Harry Potter hits midnight frenzy". CNN. 15 July 2005. Archived from the originalon 21 December 2006. Retrieved 15 January 2007.
+87. Jump up^ "Worksheet: Half-Blood Prince sets UK record". BBC News. 20 July 2005. Retrieved 19 January 2007.
+88. Jump up^ "Record print run for final Potter". BBC News. 15 March 2007. Retrieved 22 May 2007.
+89. Jump up^ "Book honour for Harry Potter author". BBC News. 21 September 2001. Retrieved 28 September 2008.
+90. Jump up^ "JK Rowling: From rags to riches". BBC News. 20 September 2008. Retrieved 28 September 2008.
+91. Jump up^ "Book 'Oscar' for Potter author". BBC News. 30 May 2001. Retrieved 28 September 2008.
+92. Jump up^ "Harry Potter casts a spell on the world". CNN. 18 July 1999. Retrieved 28 September 2008.
+93. Jump up^ "Harry Potter: Meet J.K. Rowling". Scholastic Inc. Archived from the original on 15 May 2010. Retrieved 27 September 2008.
+94. Jump up^ "Moviegoers get wound up over 'Watchmen'". MSNBC. 22 July 2008. Retrieved 28 September 2008.
+95. Jump up^ "Harry Potter beaten to top award". BBC News. 7 July 2000. Retrieved 28 September 2008.
+96. Jump up^ Levine, Arthur (2001–2005). "Awards". Arthur A. Levine Books. Retrieved 21 May 2006.
+97. Jump up^ Fisher, Douglas, et al. (2004). "Interactive Read-Alouds: Is There a Common Set of Implementation Practices?". The Reading Teacher 58 (1): 8–17.doi:10.1598/RT.58.1.1. Retrieved 19 August 2012.
+98. Jump up^ National Education Association (2007). "Teachers' Top 100 Books for Children". Retrieved 19 August 2012.
+99. Jump up^ Bird, Elizabeth (7 July 2012). "Top 100 Chapter Book Poll Results". School Library Journal "A Fuse No. 8 Production" blog. Retrieved 19 August 2012.
+100. ^ Jump up to:a b c d e Eccleshare, Julia (2002). A Guide to the Harry Potter Novels. Continuum International Publishing Group. p. 10. ISBN 978-0-8264-5317-4.
+101. Jump up^ Bloom, Harold (24 September 2003). "Dumbing down American readers". The Boston Globe. Retrieved 20 June 2006.
+102. Jump up^ Byatt, A. S. (7 July 2003). "Harry Potter and the Childish Adult". The New York Times. Retrieved 1 August 2008.
+103. Jump up^ Sweeney, Charlene (19 May 2008). "Harry Potter 'is too boring and grown-up for young readers'". The Times (London). Retrieved 15 January 2011.
+104. Jump up^ Holden, Anthony (25 June 2000). "Why Harry Potter does not cast a spell over me".The Observer (London). Retrieved 1 August 2008.
+105. Jump up^ "Chronicles of Earthsea". The Guardian (London). 9 February 2004. Retrieved 2 October 2009.
+106. Jump up^ Allison, Rebecca (11 July 2003). "Rowling books 'for people with stunted imaginations'". The Guardian (London). Retrieved 1 August 2008.
+107. Jump up^ Wilson, A. N. (29 July 2007). "Harry Potter and the Deathly Hallows by JK Rowling".The Times (London). Retrieved 28 September 2008.
+108. Jump up^ "Salon Columnist". Salon.com. 2000. Retrieved 3 August 2008.
+109. ^ Jump up to:a b Taylor, Charles (8 July 2003). "A. S. Byatt and the goblet of bile". Salon.com. Retrieved 3 August 2008.
+110. Jump up^ Fox, Killian (31 December 2006). "JK Rowling: The mistress of all she surveys". The Guardian (London). Retrieved 10 February 2007.
+111. Jump up^ "Person of the Year 2007 Runners-Up: J. K. Rowling". Time magazine. 23 December 2007. Retrieved 23 December 2007.
+112. Jump up^ Charles, Ron (15 July 2007). "Harry Potter and the Death of Reading". Washington Post. Retrieved 16 April 2008.
+113. Jump up^ Knapp, N.F. (2003). "In Defense of Harry Potter: An Apologia". School Libraries Worldwide (International Association of School Librarianship) 9 (1): 78–91. Retrieved 14 May 2009.
+114. Jump up^ Penrod, D (December 2001). "The Trouble with Harry: A Reason for Teaching Media Literacy to Young Adults". The Writing Instructor (Professional Writing Program at Purdue University). Retrieved 16 May 2009.
+115. Jump up^ Conn, J.J. (2002). "What can clinical teachers learn from Harry Potter and the Philosopher's Stone?". Medical Education 36 (12): 1176–1181. doi:10.1046/j.1365-2923.2002.01376.x. PMID 12472752.
+116. Jump up^ Fields, J.W. (2007). "Harry Potter, Benjamin Bloom, and the Sociological Imagination". International Journal of Teaching and Learning in Higher Education 19(2). Retrieved 15 May 2009.
+117. Jump up^ Sawyer, Jenny (25 July 2007). "Missing from 'Harry Potter" – a real moral struggle".The Christian Science Monitor. Retrieved 16 April 2008.
+118. Jump up^ Griesinger, E. (2002). "Harry Potter and the "deeper magic": narrating hope in children's literature". Christianity and Literature 51 (3): 455–480. Retrieved 15 May 2009.
+119. Jump up^ Suellentrop, Chris (8 November 2002). "Harry Potter: Fraud". Slate. Retrieved 16 April 2008.
+120. Jump up^ Hitchens, Christopher (12 August 2007). "The Boy Who Lived". The New York Times. Retrieved 1 April 2008.
+121. Jump up^ "SScholastic Inc, J.K. Rowling and Time Warner Entertainment Company, L.P, Plaintiffs/Counterclaim Defendants, -against- Nancy Stouffer: United States District Court for the Southern District of New York". ICQ. 17 September 2002. Retrieved 12 June 2007.
+122. Jump up^ McCarthy, Kieren (2000). "Warner Brothers bullying ruins Field family Xmas". The Register. Retrieved 3 May 2007.
+123. Jump up^ "Fake Harry Potter novel hits China". BBC News. 4 July 2002. Retrieved 11 March 2007.
+124. Jump up^ Reading Harry Potter: critical essays - Page 54, Giselle Liza Anatol - 2003
+125. Jump up^ Olsen, Ted. "Opinion Roundup: Positive About Potter". Cesnur.org. Retrieved 6 July 2007.
+126. Jump up^ Bonta, Steve (28 January 2002). "Tolkien's Timeless Tale". The New American 18 (2).
+127. Jump up^ Liddle, Rod (21 July 2007). "Hogwarts is a winner because boys will be sexist neocon boys". The Times (London). Retrieved 17 August 2008.
+128. Jump up^ Eccleshare, J. (2002). "The Publishing of a Phenomenon". A guide to the Harry Potter novels. Continuum International. pp. 7–14. ISBN 0-8264-5317-1. Retrieved 15 May 2009.
+129. ^ Jump up to:a b Beckett, S.L. (2008). "Child-to-Adult Crossover Fiction". Crossover Fiction. Taylor & Francis. pp. 112–115. ISBN 0-415-98033-X. Retrieved 16 May 2009.
+130. Jump up^ Garner, D. (1 May 2008). "Ten Years Later, Harry Potter Vanishes From the Best-Seller List". The New York Times. Retrieved 16 May 2009.
+131. Jump up^ Bolonik, K. (16 August 2000). "A list of their own". Salon.com. Retrieved 16 May 2009.
+132. Jump up^ Corliss, R. (21 July 2000). "Why 'Harry Potter' Did a Harry Houdini". Time. Retrieved 16 May 2009.
+133. Jump up^ "Books: Cover Stories At the Frankfurt Book Fair". The Independent (London). 10 October 1998. Retrieved 18 July 2009.
+134. Jump up^ "WiGBPd About Harry". The Australian Financial Review. 19 July 2000. Retrieved 26 May 2007.
+135. Jump up^ "Harry Potter and the Philosopher's Stone". The Guardian (London). 16 November 2001. Retrieved 26 May 2007.
+136. Jump up^ Linder, Bran (28 March 2000). "Chris Columbus to Direct Harry Potter". IGN. Retrieved 8 July 2007.
+137. Jump up^ "Daniel Radcliffe, Rupert Grint and Emma Watson bring Harry, Ron and Hermione to life for Warner Bros. Pictures: Harry Potter and the Sorcerer's Stone". Warner Brothers. 21 August 2000. Archived from the original on 15 May 2010. Retrieved 26 May 2007.
+138. Jump up^ Schmitz, Greg Dean. "Harry Potter and the Sorcerer's Stone (2001)". Yahoo!. Retrieved 30 May 2007.
+139. Jump up^ "Harry Potter and the Chamber of Secrets (2002)". Yahoo! Inc. Retrieved 18 August 2008.
+140. Jump up^ "Goblet Helmer Confirmed". IGN. 11 August 2003. Retrieved 29 July 2007.
+141. Jump up^ Daly, Steve (6 April 2007). "'Phoenix' Rising". Entertainment Weekly. p. 28. Retrieved 1 April 2007.
+142. Jump up^ "David Yates Dark Horizons Interview, OOTP and HBP Production". Darkhorizons.com. 13 July 2009. Retrieved 24 February 2011.
+143. Jump up^ Spelling, Ian (3 May 2007). "Yates Confirmed For Potter VI". Sci Fi Wire. Archived from the original on 13 May 2010. Retrieved 3 May 2007.
+144. Jump up^ "Coming Sooner: Harry Potter Changes Release Date". TVGuide.com. Retrieved 15 April 2009.
+145. Jump up^ "Harry Potter and the Half-Blood Prince". Market Watch. 14 August 2008. Retrieved 17 August 2008.
+146. Jump up^ Boucher, Geoff (13 March 2008). "Final 'Harry Potter' book will be split into two movies". Los Angeles Times. Retrieved 13 March 2008.
+147. Jump up^ "Last Day 12 June 2010". Snitchseeker.com. Retrieved 24 February 2011.
+148. Jump up^ "Warner Bros. Pictures mentions J. K. Rowling as producer". Business Wire. 20 September 2010. Retrieved 24 February 2011.
+149. Jump up^ "All Time Worldwide Box Office Grosses". Box Office Mojo. Retrieved 29 July 2007.
+150. Jump up^ "Box Office Harry Potter". The-numbers.com. Retrieved 24 February 2011.
+151. Jump up^ "Box Office Mojo". boxofficemojo.com. Retrieved 11 March 2011.
+152. Jump up^ "Harry Potter: Books vs films". Digital Spy. Retrieved 7 September 2008.
+153. Jump up^ "Potter Power!". Time For Kids. Retrieved 31 May 2007.[dead link]
+154. Jump up^ Puig, Claudia (27 May 2004). "New 'Potter' movie sneaks in spoilers for upcoming books". USA Today. Retrieved 31 May 2007.
+155. Jump up^ "JK 'loves' Goblet Of Fire movie". Newsround (BBC). 7 November 2005. Retrieved 31 May 2007.
+156. Jump up^ "Exclusive: Harry Potter Director David Yates". Comingsoon.net. 13 July 2009. Retrieved 19 June 2010.
+157. Jump up^ Rowling, J. K. "How did you feel about the POA filmmakers leaving the Marauder's Map's background out of the story? (A Mugglenet/Lexicon question)". J. K. Rowling. Retrieved 6 September 2008.[dead link]
+158. Jump up^ "Harry Potter franchise to get Outstanding BAFTA award". BBC News. 3 February 2011. Retrieved 3 February 2011.
+159. Jump up^ "Outstanding British Contribution to Cinema in 2011 – The Harry Potter films". BAFTA. 3 February 2011. Retrieved 3 February 2011.
+160. Jump up^ EA Harry Potter Retrieved 19 June 2010.
+161. Jump up^ EA Harry Potter gameplay Retrieved 19 June 2010.
+162. Jump up^ Valentine, James (13 July 2012). "It's time for the compleat, omnipresent me". The Australian. Retrieved 9 August 2012.
+163. Jump up^ "Creator Bryan Fuller Hints at PUSHING DAISIES Broadway-Bound 'Revival'". broadwayworld.com. 16 July 2012. Retrieved 9 August 2012.
+164. Jump up^ "J.K. Rowling to Work on Harry Potter Stage Play". 20 December 2013. Retrieved 22 December 2013.
+165. Jump up^ "J.K. Rowling to produce Harry Potter stage play". USA Today. 20 December 2013. Retrieved 22 December 2013.
+166. Jump up^ Garcia, Jason (17 June 2010). "Big day is here: Universal hopes Harry Potter's magic will last". Orlando Sentinel. Retrieved 19 June 2010.
+167. Jump up^ "Hogwarts opens in Florida: Amazing new Harry Potter theme park to cast its spell over British tourists". Daily Mail (London). 19 September 2009. Retrieved 19 September 2009.
+168. Jump up^ "Wizarding World of Harry Potter theme park opens". Australia Times. 19 June 2010. Retrieved 19 June 2010.
+169. Jump up^ Brigante, Ricky. "Harry Potter gives Universal's Islands of Adventure park huge attendance boost in 2010 – but numbers still don't rival Disney's". Inside the Magic. Retrieved 4 May 2011.
+170. Jump up^ "Disney World Attendance Declines Slightly". WESH. 10 August 2010. Retrieved 4 May 2011.
+171. Jump up^ Barbaro, Michael (8 January 2011). "A Wizard Rivals Mickey". The New York Times. p. A14. Retrieved 9 January 2011.
+172. Jump up^ "Harry Potter tour to open at Leavesden studios in 2012". BBC News. 5 March 2011. Retrieved 18 May 2011.
+173. Jump up^ "Harry Potter tour at Leavesden Studios reveals new sets". BBC News. 19 December 2011. Retrieved 16 February 2012.
+Further reading
+* Agarwal, Nikita; Chitra Agarwal (2005). Friends and Foes of Harry Potter: Names Decoded. Outskirts Press. ISBN 1-59800-221-X
+* Anatol, Giselle Liza (2003). Reading Harry Potter: critical essays. Praeger. ISBN 0-313-32067-5
+* Burkart, Gina (2005). A parent's guide to Harry Potter. InterVarsity Press. ISBN 0-8308-3288-2
+* Duriez, Colin (2007). Field Guide to Harry Potter. IVP Books. ISBN 978-0-8308-3430-3
+* Gunelius, Susan (2008). Harry Potter: the story of a global business phenomenon. Palgrave Macmillan. ISBN 0-230-20323-X
+* Heilman, Elizabeth E (2008). Critical perspectives on Harry Potter. Routledge. ISBN 978-0-415-96484-5
+* Mulholland, Neil (2007). The psychology of Harry Potter: an unauthorized examination of the boy who lived. BenBella Books. ISBN 978-1-932100-88-4
+* Silvester, William (2010). Harry Potter Collector's Handbook. Krause. ISBN 978-1-4402-0897-3
+External links
+Listen to this article (info/dl)
+
+MENU
+0:00
+
+This audio file was created from a revision of the "Harry Potter" article dated 2011-01-02, and does not reflect subsequent edits to the article. (Audio help)
+More spoken articles
+
+Look up Appendix:Harry Potter in Wiktionary, the free dictionary.
+Wikibooks has a book on the topic of: Muggles' Guide to Harry Potter
+Wikiquote has a collection of quotations related to: Harry Potter
+Wikimedia Commons has media related to Harry Potter.* Harry Potter, an external wiki
+* Harry Potter fanon, an external wiki
+* J. K. Rowling's personal website
+* Harry Potter movies – Official website (Warner Bros.)
+* Harry Potter at Bloomsbury.com (International publisher)
+* Harry Potter at Scholastic.com (US publisher)
+* Harry Potter at Raincoast.com (Canadian publisher)
+* Works by or about Harry Potter in libraries (WorldCat catalog)
+* Harry Potter collected news and commentary at The Guardian
+* Harry Potter collected news and commentary at The New York Times
+* Harry Potter collected news and commentary at The Wall Street Journal
+[show]
+* V
+* T
+* E
+The Harry Potter series by J. K. Rowling
+[show]
+* V
+* T
+* E
+Works by J. K. Rowling
+[show]
+* V
+* T
+* E
+Books I Love Best Yearly: Younger Readers Award
+[show]
+* V
+* T
+* E
+Books I Love Best Yearly: Older Readers Award
+Categories: 
+* Harry Potter
+* 1997 introductions
+* BILBY Award winning works
+* Curses in fiction
+* Fantasy novel series
+* Schools in fiction
+Navigation menu
+* Create account
+* Log in
+* Article
+* Talk
+* Read
+* View source
+* View history
+Top of Form
+
+Bottom of Form
+* Main page
+* Contents
+* Featured content
+* Current events
+* Random article
+* Donate to Wikipedia
+* Wikimedia Shop
+Interaction
+* Help
+* About Wikipedia
+* Community portal
+* Recent changes
+* Contact page
+Tools
+Print/export
+Languages
+* Afrikaans
+* Alemannisch
+* ????
+* ???????
+* Armãneashce
+* ???????
+* Asturianu
+* Az?rbaycanca
+* ?????
+* Bân-lâm-gú
+* ??????????
+* Bikol Central
+* ?????????
+* Boarisch
+* Bosanski
+* Brezhoneg
+* Català
+* ?eština
+* Chavacano de Zamboanga
+* Cymraeg
+* Dansk
+* Deutsch
+* Eesti
+* ????????
+* Español
+* Esperanto
+* Euskara
+* ?????
+* Føroyskt
+* Français
+* Frysk
+* Gaeilge
+* Galego
+* ???????
+* ???
+* ???????
+* ??????
+* Hrvatski
+* Ido
+* Bahasa Indonesia
+* Interlingua
+* Íslenska
+* Italiano
+* ?????
+* Basa Jawa
+* ?????
+* ???????
+* ???????
+* Latina
+* Latviešu
+* Lëtzebuergesch
+* Lietuvi?
+* Limburgs
+* Magyar
+* ??????????
+* ??????
+* ?????
+* Bahasa Melayu
+* Mìng-d??ng-ng??
+* ??????
+* Nederlands
+* ??????
+* ???
+* Norsk bokmål
+* Norsk nynorsk
+* Occitan
+* ?????
+* ??????
+* ??????
+* ????? ????
+* Piemontèis
+* Plattdüütsch
+* Polski
+* Português
+* Român?
+* Runa Simi
+* ???????
+* ???? ????
+* Sámegiella
+* Sardu
+* Scots
+* Shqip
+* Sicilianu
+* Simple English
+* Sloven?ina
+* Slovenš?ina
+* ?l?nski
+* ?????? / srpski
+* Srpskohrvatski / ??????????????
+* Suomi
+* Svenska
+* Tagalog
+* ?????
+* ???????/tatarça
+* ??????
+* ???
+* Türkçe
+* ??????????
+* ????
+* Vèneto
+* Ti?ng Vi?t
+* ??
+* Winaray
+* ??
+* ??????
+* ??
+* Žemait?ška
+* ??
+* Edit links
+* This page was last modified on 16 April 2014 at 18:27.
+* Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+* Privacy policy
+* About Wikipedia
+* Disclaimers
+* Contact Wikipedia
+* Developers
+* Mobile view
+* 
+* 
+
+
+How Not to Be Misled by the Jobs Report
+MAY 1, 2014
+Continue reading the main story
+If the economy actually added 150,000 jobs last month, it would be possible to see any of these headlines:
+The jobs number is just an estimate, and it comes with uncertainty.
+
+We obsess far too much on the Labor Department’s monthly jobs report.
+
+Think about it this way: It’s the first Friday of the month, and the Labor Department has bad news: The economy has added a mere 64,000 jobs last month, a steep slowdown from 220,000 the month before. From Wall Street to Twitter, the reaction is swift and negative.
+
+The price of oil falls, as do the prices of blue-chip stocks like General Electric. The Federal Reserve faces calls to push interest rates lower. The lead headlines in the next day’s papers talk of faltering job growth.
+
+But what if all the worries were based on nothing more than random statistical noise? What if the apparent decline in job growth came from the inherent volatility of surveys that rely on samples, like the survey that produces the Labor Department’s monthly employment estimate?
+
+We generated those numbers with a computer, after giving it a simple set of directions: Assume that the economy is adding exactly 150,000 jobs every month, and that the monthly estimates of job growth come with exactly as much statistical noise as the Labor Department says its estimates have.
+
+Let’s consider how statistical noise might affect our perception of the jobs report in two scenarios: one with steady job growth and one with accelerating job growth.
+
+Did you infer a pattern from the chart on the right? If you did, you were reading too much into the jobs numbers. That chart should be a straight line, but we’ve added the same amount of sampling error that the jobs report has.
+Even when the economy is moving in a clear direction, the noise in month-to-month changes can be big enough to obscure any trend. Imagine a different type of year from the one above with constant job growth: one in which true job growth starts at 150,000 jobs in January and accelerates by 15,000 a month to more than 300,000 in December.
+
+If you squint, you can see evidence of the upward trend, with stronger growth apparent in the second half of the year. But month by month, you wouldn’t have any way of knowing if it was a true acceleration, or just a false signal generated by sampling error.
+The result of one of the computer simulations was a year’s worth of fluctuating job growth. Two months, June and September, showed job creation below 100,000; two others, May and August, showed job growth of more than 200,000. Only three months out of our hypothetical year, January, April and July, were particularly close to the “true” level of job creation, 150,000 jobs.
+
+When traders put too much weight on data that can mislead, the stock market can soar or swoon for no good reason. Business executives may make decisions based on economic trends that don’t exist. And journalists risk giving their readers or viewers a misleading view of where things stand in the American economy.
+
+Human beings, unfortunately, are bad at perceiving randomness. If you go to a baseball game and watch a commanding performance by your team, it tells you very nearly nothing about how the team will perform over the course of a season. Similarly, one month of jobs numbers doesn’t tell you much of anything about how the economy is actually doing.
+
+None of this is meant to cast aspersions on the Bureau of Labor Statistics, the arm of the Labor Department that faces the unenviable task of trying to discern how many jobs there are in the United States each month. The bureau does so by conducting an enormous survey of 144,000 employers who together employ about a third of all nonagricultural workers. It is one of the most important economic data releases, in no small part because it comes out quickly; results from a survey the bureau took in the middle of last month, for example, will be released on Friday, before almost any other data about the April economy is available.
+
+Even with all those survey participants, there is sampling error; the employers responding to the survey might be different from the nation’s employers as a whole. And the Labor Department’s initial release, coming as it does so soon after the survey, is released before all the data is in, with researchers filling in the gaps with statistical estimates that might prove wrong. Only in later weeks and months is all the data available, and the bureau then revises its initial numbers.
+
+The sampling error becomes magnified because those of us following the jobs report don’t focus on the total number of jobs in the economy (more than 130 million). We focus on the relatively small change in the number of these jobs from month to month (typically a few hundred thousand, at most).
+
+Whether we’re snarky newspaper journalists on Twitter or hedge-fund managers trying to trade currencies, we obsess over these reports because we have little choice but to care about how the economy is doing. Its condition affects whether our employers should expand, when we should buy a house or retire and thousands of other decisions. But it’s worth remembering that no one report can neatly summarize the health of a $17 trillion economy of 300 million people, certainly not in something close to real time.
+
+At 8:30 a.m. on the first Friday of any given month, we all actually know a lot less than you might think. The closest thing to an accurate description of the economy’s condition is a description that comes with a lot of humility.
+
